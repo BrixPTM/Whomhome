@@ -154,16 +154,21 @@ if ( ! class_exists( 'Alg_WC_CIVS_Frontend' ) ) {
 					$html  .= '<span data-attribute="'.esc_attr($attribute).'" style="background-image: url('.esc_attr($image_src[0]).')" class="alg-wc-civs-term image" data-value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $args['selected'] ), $term->slug, false ) . '>' . '</span>';
 				
 				}
-				/* term name added */
-				$html .= '<h6 id="termName">' . esc_attr( $term->name ) .  '</h6>';
+				$html .= '<div class="tago" style="width: 360px; padding:20px">';
+				
+				$html .= '<div class="tago" style="position: relative; background-image: url('.esc_attr($image_src[0]).'); background-position: center; width: 300px; height: 100px; margin-left: 2px; padding: 10px" ></div>';
+					
+				$html .= '<div class="tago" style="position: relative; width: 250px; height: 150px; margin-left: 2px; padding: 20px" > <h4>'. esc_attr( $term->description ) . '</h4>';
+				
+				$html .= '</div></div>';
+
 			}
 			
 			$html .= '</div>' ;
 			
-
-			
-
 			return $html;
+			
+			echo '<span class="orderSwatch"><a href="http://www.whom-test.dev.cc/swatches/"><u>ORDER YOUR FREE SWATCHES</u></a></span>';
 		}
 
 		/**
@@ -187,5 +192,6 @@ if ( ! class_exists( 'Alg_WC_CIVS_Frontend' ) ) {
 			wp_register_style( 'alg-wc-civs', ALG_WC_CIVS_URL . $css_file, array(), $css_ver );
 			wp_enqueue_style( 'alg-wc-civs' );
 		}
+		
 	}
 }
