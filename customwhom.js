@@ -18,7 +18,15 @@ $('.shopbtt').on('click', function (e) {
             scrollTop: 0
         }, 1000);
 });
-	
+
+$('#varTrig').click(function() {
+  //Use the current button which triggered the event
+  $(this)
+    //Find the sibling you want to toggle, of a specified class
+    .next().show();
+});
+
+
 
 jQuery(document).ready(function() {
 jQuery('#top-menu li.mega-menu > a, #et-secondary-nav li.mega-menu > a').click(function(e) {
