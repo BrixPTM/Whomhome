@@ -1,0 +1,47 @@
+<span class="semiDesc">Accent Chair</span>
+Perfect for armchair critics, the Trash Talker lounge chair gives you the fit and feel of an expert in any field. It’s deep, generous seat and low back are made for discerning relaxation.
+
+This chair doesn’t make compromises. This chair doesn’t stutter. Its striking wooden frame contrasts sharply against the too comfortable deep seat. This chair doesn’t care where your coffee came from. Relax, don’t apologize.
+<div class="specs_toggle_wrapper"><a id="specs_wrap_toggle" style="text-align: left; cursor: pointer;">+ MORE SPECS</a></div>
+<div id="specs_wrap" style="display: none;">
+<ul class="specsList">
+ 	<li>DIMENSIONS: 95" W X 40"D X 35"H</li>
+ 	<li>SEAT HEIGHT: 19"</li>
+ 	<li>SEAT WIDTH: 24"</li>
+ 	<li><a href='http://www.whom-test.dev.cc/wp-content/uploads/2018/10/ProductDimensionsPDF.pdf'><u>COMPLETE DIMENSIONS</u></a></li>
+ 	<li><a href='http://www.whom-test.dev.cc/wp-content/uploads/2018/10/MeasurementPDF.pdf'><u>MEASURING FOR DELIVERY</u></a></li>
+</ul>
+</div>
+<span class="orderSwatch">
+<a><u>ORDER YOUR FREE SWATCHES</u></a></span>
+
+
+line 616 wc countries
+
+	public function get_default_address_fields() {
+		if ( 'optional' === get_option( 'woocommerce_checkout_address_2_field', 'optional' ) ) {
+			$address_2_placeholder = __( 'Apartment, suite, unit etc. (optional)', 'woocommerce' );
+		} else {
+			$address_2_placeholder = __( 'Apartment, suite, unit etc.', 'woocommerce' );
+		}
+
+
+line 656 
+
+	'placeholder'  => esc_attr__( 'House number and street name', 'woocommerce' ),
+
+	662
+
+	wc woocommerce_checkout_address_2_field
+	216
+						'placeholder' => esc_attr__(
+						'Notes about your order, e.g. special notes for delivery.',
+						'woocommerce'
+					),
+
+
+						<p class="price"><?php echo $product->get_price_html(); ?></p>
+
+
+										/* term name added */
+				$html .= '<h6 id="termName">' . esc_attr( $term->name ) .  '</h6>';

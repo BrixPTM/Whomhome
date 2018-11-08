@@ -1,0 +1,97 @@
+window.onload=function(){
+    document.querySelector('.variations_form').onclick = function() { test() };
+    function test() {
+       console.log('hey');
+       jQuery('#pa_wood').attr('size', 4).show();
+    }
+    }
+
+    window.onload=function(){
+        document.querySelector('.variations_form').onclick = function() { test() };
+        function test() {
+           jQuery('#pa_wood').attr('size', 4).show();
+        }
+        document.querySelector('#pa_wood').onmouseleave = function() { test2() };
+        function test2() {
+           jQuery('#pa_wood').hide();
+       }
+       }
+
+       jQuery(document).ready(function($) {
+  
+  $("#author_bio_wrap_toggle").click(function()
+  {
+    
+    $("#author_bio_wrap").slideToggle( "slow");
+    
+	  if ($("#author_bio_wrap_toggle").text() == "MORE SPECS")
+      {			
+        $("#author_bio_wrap_toggle").html("LESS SPECS")
+      }
+	  else 
+      {		
+        $("#author_bio_wrap_toggle").text("MORE SPECS")
+      }
+    
+  });  
+  
+});
+
+jQuery("label[for='pa_fabric']")[0].id = "fabricID";
+
+document.querySelector('.pa_fabric').onmouseleave = function() { test2() };
+        function test2() {
+           jQuery('.pa_fabric').hide();
+       }
+
+document.querySelector('.pa_wood').onmouseleave = function() { test4() };
+        function test4() {
+           jQuery('.pa_wood').hide();
+       }
+
+       $("label[for='gender']").attr("id", "addthisid");
+       $("label[for='gender']")[0].id = "addthisid";
+       $("label[for='gender']").get(0).id = "addthisid";
+
+
+       var dValue = jQuery('.alg-wc-civs-term').data.value;
+
+
+
+		jQuery('.alg-wc-civs-term').each(function() {
+            jQuery(this).after(jQuery('<span>').text(jQuery.data(jQuery(this).value)));
+});
+
+<p>' . esc_attr( $term->slug ) . </p>
+
+// meta 
+<span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
+
+// uncategorize 
+<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+
+	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+
+
+    //quantity
+    woocommerce_quantity_input( array(
+		'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+		'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+		'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
+    ) );
+    
+    //longer quantity
+    <?php
+	do_action( 'woocommerce_before_add_to_cart_quantity' );
+
+	woocommerce_quantity_input( array(
+		'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+		'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+		'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
+	) );
+
+	do_action( 'woocommerce_after_add_to_cart_quantity' );
+    ?>
+    
+
+<p class="price"><?php echo $product->get_price_html(); ?></p>
