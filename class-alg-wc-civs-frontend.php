@@ -143,6 +143,7 @@ if ( ! class_exists( 'Alg_WC_CIVS_Frontend' ) ) {
 			$options   = $args['options'];
 
 			$terms = wc_get_product_terms( $product->get_id(), $attribute, array( 'fields' => 'all' ) );
+			
 			$html  = '<div data-attribute="'.esc_attr($attribute).'" class="alg-wc-civs-attribute image ' . esc_attr( $attribute ) . '">';
 
 			foreach ( $terms as $term ) {
@@ -158,7 +159,7 @@ if ( ! class_exists( 'Alg_WC_CIVS_Frontend' ) ) {
 				
 				$html .= '<div style="clear: both; position: relative; background-image: url('.esc_attr($image_src[0]).'); background-position: center; max-width: 280px; height: 100px" ></div>';
 					
-				$html .= '<div class="desc" style="position: relative; width: 250px; height: 150px; margin-left: 2px; padding: 10px" > <h3>' . esc_attr( $term->name ). '  </h3> <p class="varDescription">'. esc_attr( $term->description ) . '</p>';
+				$html .= '<div class="desc" style="position: relative; width: 250px; height: 150px; margin-left: 2px; padding: 10px" > <h4>' . esc_attr( $term->name ). '  </h4> <h4>' .get_field("sub", $term).'</h4><p class="varDescription">'. esc_attr( $term->description ) . '</p>';
 				
 				$html .= '</div></div>';
 
