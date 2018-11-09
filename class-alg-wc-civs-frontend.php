@@ -154,11 +154,11 @@ if ( ! class_exists( 'Alg_WC_CIVS_Frontend' ) ) {
 					$html  .= '<span data-attribute="'.esc_attr($attribute).'" style="margin: 3px; background-image: url('.esc_attr($image_src[0]).')" class="alg-wc-civs-term varTrig image" data-value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $args['selected'] ), $term->slug, false ) . '>' . '</span>';
 				
 				}
-				$html .= '<div class="varLabel" style="float: left; width: 280px;">';
+				$html .= '<div class="varLabel" style="float: left; width:275px; margin-left: 2px">';
 				
-				$html .= '<div style="clear: both; position: relative; background-image: url('.esc_attr($image_src[0]).'); background-position: center; max-width: 280px; height: 100px; margin: 10px" ></div>';
+				$html .= '<div style="clear: both; position: relative; background-image: url('.esc_attr($image_src[0]).'); background-position: center; max-width: 280px; height: 100px" ></div>';
 					
-				$html .= '<div class="tago" style="position: relative; width: 250px; height: 150px; margin-left: 2px; padding: 20px" > <h4>'. esc_attr( $term->description ) . '</h4>';
+				$html .= '<div class="desc" style="position: relative; width: 250px; height: 150px; margin-left: 2px; padding: 10px" > <h3>' . esc_attr( $term->name ). '  </h3> <p class="varDescription">'. esc_attr( $term->description ) . '</p>';
 				
 				$html .= '</div></div>';
 
