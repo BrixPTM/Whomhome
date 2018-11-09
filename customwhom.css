@@ -70,7 +70,7 @@ body {
 
 /* Table Size*/
 .woocommerce div.product form.cart .variations {
-	width: 55%;
+	max-width: 280px;
 	margin: 30px 0 0 25px;
 }
 
@@ -213,7 +213,6 @@ tr {
 	max-height: 400px;
 }
 
-
 .pa_wood {
 	max-height: 400px;
 }
@@ -228,6 +227,12 @@ tr {
 	display: block;
 	content: '\A';
 	white-space: pre; 
+}
+
+
+.varLabel {
+	display: none;
+	position: relative;
 }
 
 /*** hides sub-menu on hover ***/
@@ -634,8 +639,38 @@ h1.product_title {
 	line-height: 2.5em;
 }
 
+.desc {
+	position: relative; 
+	width: 250px; 
+	height: auto; 
+	margin-left: 2px; 
+	padding: 15px 5px;
+}
+
 .variations {
 	margin-top: 40px;
+	font-family: 'Raleway';
+	font-size: 10px;
+}
+
+.varTitle {
+	font-size: 12px;
+	font-family: 'Raleway';
+}
+
+.varSub {
+	font-family: 'Acaslon';
+	font-size: 12px;
+	font-style: italic;
+}
+
+.varDescription {
+	font-family: 'Acaslon';
+	font-size: 12px;
+	line-height: 1.6;
+}
+
+.varDescriptiontwo {
 	font-family: 'Raleway';
 	font-size: 10px;
 }
