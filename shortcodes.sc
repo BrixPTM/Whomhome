@@ -44,3 +44,16 @@ echo do_shortcode('[et_pb_section global_module="1192"][/et_pb_section]');
 				
 
 			}
+
+
+
+
+
+
+			// social share
+
+			<span class='socialShare'><br><br> SHARE </span>
+	<?php 
+
+	echo do_shortcode('[Sassy_Social_Share style="background-color:#f3f2ef;"]');
+?>

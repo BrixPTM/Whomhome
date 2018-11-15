@@ -19,11 +19,13 @@ $('.shopbtt').on('click', function (e) {
         }, 1000);
 });
 
-$('#varTrig').click(function() {
-  //Use the current button which triggered the event
-  $(this)
-    //Find the sibling you want to toggle, of a specified class
-    .next().show();
+$('.varTrig').click(function() {
+		if ($('.varLabel').is(":visible")) {
+			$('.varLabel').hide();
+		} else {
+			$('.pa_fabric').css({"height": "auto"});
+			$(this).next().toggle();
+		}
 });
 
 
