@@ -55,13 +55,6 @@ body {
 	font-size: 16px;
 }
 
-
-
-
-
-
-
-
 /*hamburger float*/
 #top-menu-nav {
 	float: right !important;	
@@ -422,7 +415,6 @@ ul.woof_list {
 	margin-bottom: 0;
 }
 
-
 /* mega menu shop page */
 .et_pb_module #woocommerce_product_categories2-3 .product-categories {
 	top: 40% !important;
@@ -443,6 +435,11 @@ ul.woof_list {
 .columns-3 {
 	position: static;
 	z-index: -9;
+}
+
+/* archive term */
+.term-description {
+	display: none;
 }
 
 /* sidebar size*/
@@ -1151,7 +1148,7 @@ tbody tr td #learn-more {
 	
 	.wpmenucartli {
 		position: absolute !important;
-		right: 84%;
+		right: 81%;
 		bottom: 0%;
 	}
 	
@@ -1173,7 +1170,7 @@ tbody tr td #learn-more {
 		margin-bottom: 10px !important;
 	}
 	.couponCode {
-		right: 42%;
+		right: 52%;
 	}
 	.shop_table .coupon {
 		margin-bottom: 0 !important;
@@ -1300,7 +1297,12 @@ tbody tr td #learn-more {
 	#et_search_icon:before {
 		top: 0;
 	}
-
+	/* hamburger */
+	#top-menu li.mega-menu>ul {
+		width: 34%;
+	}
+	
+	/* footer */
 	.et_pb_row_5col>.et_pb_column.et_pb_column_1_5 {
 		width: 16.25%;
 	}
@@ -1322,6 +1324,35 @@ tbody tr td #learn-more {
 	}
 	.gitl {
 		margin-top: 10px;
+	}
+	/* cart image */
+	.woocommerce-cart table.cart img {
+		width: 175px;
+	}
+	/* pink bg */
+	.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+		background-color: #f3f2ef;
+	}
+	.couponCode {
+		right: 43%;
+		top: 24px;
+	}
+	.shop_table .coupon{
+		margin-bottom: 0 !important;
+	}
+	.updateCart {
+		margin-bottom: 10px;
+	}
+	
+	.woocommerce-page ul.products li.product:nth-child(n) {
+		width: 42% !important;
+	}
+	.archive #page-container #et-main-area ul.products {
+		padding-left: 12%;
+		width: 92%;
+	}
+	.archive #page-container #et-main-area div #myBtn {
+		margin-left: 12% !important;
 	}
 }
 
