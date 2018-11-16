@@ -1094,6 +1094,7 @@ td.product-total {
 tbody tr td #learn-more {
 	display: flex;
 	justify-content: center;
+	padding-right: 5%;
 }
 
 /* view cart hover */ 
@@ -1150,7 +1151,8 @@ tbody tr td #learn-more {
 	}
 	
 	#logo {
-		max-height: 60%;
+		top: 0.2%;
+		max-height: 80%;
 	}
 	
 	.wpmenucartli {
@@ -1205,13 +1207,13 @@ tbody tr td #learn-more {
 	
 	/* social media icons*/
 	.et_pb_social_media_follow li a.icon::before {
-		width: 40px;
-		font-size: 20px;
-		line-height: 40px;
+		width: 30px;
+		font-size: 15px;
+		line-height: 32px;
 	}
 	.et_pb_social_media_follow li a.icon {
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
 	}
 	
 	.et-pb-arrow-next:before,.et-pb-arrow-prev:before {
@@ -1331,6 +1333,49 @@ tbody tr td #learn-more {
 	.et_pb_column_1 {
 		padding-left: 0 !important;
 	}
+	
+	li.wpmenucartli a.wpmenucart-contents span{
+	padding-left: 0.5px;
+	}
+	#menu-item-347 a {
+		border-top: 2px solid #fff !important;
+	}
+	#menu-item-347 a, #menu-item-566 a, #menu-item-1747 a, #menu-item-2582 a {
+		border-bottom: 2px solid #fff !important;
+	}
+	#top-menu li.mega-menu>ul>li>a:first-child {
+		padding-top: 10px !important;
+	}
+	#top-menu li.mega-menu>ul {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+	.et_pb_column {
+		margin-bottom: 20px !important;
+	}
+	/* quantity box */
+	.woocommerce .quantity input.qty {
+		font-size: 14px !important;
+		height: 22px;
+		padding-bottom: 8px;
+	}
+	/* pink bg */
+	.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+		background-color: #f3f2ef;
+	}
+	/* cart total */
+	.cart-subtotal td span.woocommerce-Price-amount, .order-total td span.woocommerce-Price-amount {
+		padding-right: 0;
+	}
+	/* affirm */
+	tbody tr td #learn-more {
+		display: flex;
+		justify-content: flex-end;
+	}
+	/* checkout button*/
+	.woocommerce-page a.button, .woocommerce-page a.button.alt {
+		width: 75%;
+	}
 }
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1399,8 +1444,9 @@ tbody tr td #learn-more {
 	.archive #page-container #et-main-area div #myBtn {
 		margin-left: 12% !important;
 	}
-	
-	
+	li.wpmenucartli a.wpmenucart-contents span{
+	padding-left: 2.5px;
+	}
 }
 
 /* media 1440 - 2560 */
