@@ -1103,7 +1103,7 @@ tbody tr td #learn-more {
 }
 
 .blackDesk {
-	color: black;
+	color: #5d5757 !important;
 }
 
 /* view cart hover */ 
@@ -1131,6 +1131,11 @@ tbody tr td #learn-more {
 	opacity: 1 !important;
 }
 
+.wc-proceed-to-checkout a {
+		color: #fff !important;
+		background-color: #33342a !important;
+	}
+
 .archive #page-container #et-main-area div #myBtn {
 	margin-left: 18%;
 }
@@ -1141,6 +1146,10 @@ tbody tr td #learn-more {
 
 .ds-hide {
 	display: none;
+}
+
+input[type="text"], textarea {
+  background-color : inherit; 
 }
 
 /* max 500 */
@@ -1414,11 +1423,16 @@ tbody tr td #learn-more {
 	.blackDesk {
 		color: #727272 !important;
 	}
+	
+	.et-search-form input {
+		right:45px;
+		font-family: 'Acaslon';
+		padding-bottom: 10px;
+	}
 
 }
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	
 	#logo {
 	max-height: 50%;
 	}
@@ -1426,6 +1440,11 @@ tbody tr td #learn-more {
 	#et_search_icon:before {
 		top: 0;
 	}
+	
+	#et_top_search {
+		margin-top:0px;
+	}
+	
 	/* hamburger */
 	#top-menu li.mega-menu>ul {
 		width: 34%;
@@ -1433,7 +1452,7 @@ tbody tr td #learn-more {
 	
 	/* footer */
 	.footer-tab {
-		padding: 2% 1% 2% 10% !important;
+		padding: 2% 1% 2% 9% !important;
 	}
 	
 	.et_pb_row_5col>.et_pb_column.et_pb_column_1_5 {
@@ -1456,10 +1475,30 @@ tbody tr td #learn-more {
 	.et_pb_row_4col {
 		display: block;
 	}
+	/* shop */
+	.woocommerce ul.products li.product a img, .woocommerce-page ul.products li.product a img {
+		height: 316px;
+	}
+	
+	/* archive */
+	.archive #page-container #et-main-area ul.products {
+		width: 100% !important;
+	}
+	
+	/* product page */
+	.woocommerce-product-gallery__trigger {
+		bottom: 27.5%;
+	}
+	
 	/* cart image */
 	.woocommerce-cart table.cart img {
 		width: 175px;
 	}
+	
+	.wc-proceed-to-checkout a {
+		width: 233px;
+	}
+	
 	/* pink bg */
 	.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
 		background-color: #f3f2ef;
@@ -1486,7 +1525,15 @@ tbody tr td #learn-more {
 		margin-left: 12% !important;
 	}
 	li.wpmenucartli a.wpmenucart-contents span{
-	padding-left: 2.5px;
+		padding-left: 2.5px;
+	}
+	.collectionTD {
+		width: 38.7% !important;
+		padding-top: 0% !important;
+	}
+	
+	.pPeopleHigh .et_pb_column_3_5 {
+		width: 82%;
 	}
 }
 
