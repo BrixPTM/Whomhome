@@ -1039,13 +1039,6 @@ h1.product_title {
 input[type=text], input[type=tel], input[type=email], textarea, .select2-container--default .select2-selection--single  {
 	border: 0;
 }
-/* circle */
-li.wpmenucartli a.wpmenucart-contents span.cartcontents::before {
-	background-color: red;
-	border-radius: 50%;
-	width: 12px;
-	height: 12px;
-}
 
 th.product-total {
 	display: flex;
@@ -1425,14 +1418,22 @@ input[type="text"], textarea {
 	}
 	
 	.et-search-form input {
-		right:45px;
+		right:46px;
 		font-family: 'Acaslon';
 		padding-bottom: 10px;
 	}
 
 }
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+	#top-menu li.show-submenu ul.sub-menu {
+		padding-top: 15px;
+		width: auto;
+	}
+}
+
 /* ipad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	#logo {
 	max-height: 50%;
 	}
@@ -1524,9 +1525,7 @@ input[type="text"], textarea {
 	.archive #page-container #et-main-area div #myBtn {
 		margin-left: 12% !important;
 	}
-	li.wpmenucartli a.wpmenucart-contents span{
-		padding-left: 2.5px;
-	}
+
 	.collectionTD {
 		width: 38.7% !important;
 		padding-top: 0% !important;
@@ -1535,12 +1534,37 @@ input[type="text"], textarea {
 	.pPeopleHigh .et_pb_column_3_5 {
 		width: 82%;
 	}
+	
+	.dontComeApart .et_pb_column {
+		width: 100%;
+	}
+	.s-gitl {
+		padding-top: 30px;
+	}
+	
+	#top-menu li.show-submenu ul.sub-menu {
+		padding-top: 15px;
+		width: auto;
+	}
+	
 }
 
-/* media 1440 - 2560 */
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
-
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+.about-row-1 {
+	max-width: 88%;
+	width: 88%;
+	}
+	#top-menu li.show-submenu ul.sub-menu {
+		padding-top: 15px;
+		width: auto;
+	}
+	
 }
+
+@media only screen and (min-width: 1441px) and (max-width: 1799px) {
+	
+}
+
 
 /* media 1800 - 2000*/
 @media only screen and (min-width: 1800px) and (max-width: 2000px) {
@@ -1570,6 +1594,9 @@ input[type="text"], textarea {
 }
 
 @media only screen and (min-width: 2301px) and (max-width: 2600px) {
+	#top-menu li.show-submenu ul.sub-menu {
+		padding-top: 15px;
+	}
 	.et_shop_image {
 	text-align: -webkit-center;
 	}	
@@ -1578,6 +1605,7 @@ input[type="text"], textarea {
 		width: 100%;
 		padding-right: 12%;
 	}
+	
 }
 
 @media only screen and (min-width: 2601px) and (max-width: 3600px) {
@@ -1588,12 +1616,5 @@ input[type="text"], textarea {
 		padding-left: 33%;
 		width: 100%;
 		padding-right: 19%;
-	}
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1044px) {
-.about-row-1 {
-	max-width: 88%;
-	width: 88%
 	}
 }
