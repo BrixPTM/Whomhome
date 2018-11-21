@@ -1140,9 +1140,14 @@ tbody tr td #learn-more {
 .ds-hide {
 	display: none;
 }
-
-input[type="text"], textarea {
-  background-color : inherit; 
+/* 320 to 374 */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	.widgettitle {
+		margin-right: 5px;
+	}
+	.varLabel {
+		max-width: 221px;
+	}
 }
 
 /* max 500 */
@@ -1258,6 +1263,7 @@ input[type="text"], textarea {
 	/* widget title refine */
 	.widgettitle {
 		margin-top: 20px;
+		margin-right: 5px;
 	}
 	.et_pb_module #woocommerce_product_categories2-3 .product-categories {
 		top: 80% !important;
@@ -1331,7 +1337,9 @@ input[type="text"], textarea {
 		margin: 0;
 		margin-top: 20px;
 	}
-	
+	.semiDesc {
+	font-family: 'Acaslon';
+	}
 	/* cart image */
 	.woocommerce-cart table.cart img {
 		width: 150px;
