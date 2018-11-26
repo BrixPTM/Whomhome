@@ -1512,10 +1512,15 @@ tbody tr td #learn-more {
 		font-family: 'Acaslon';
 		padding-bottom: 10px;
 	}
+	/* faq page */
+	.et_pb_toggle_close {
+		padding: 15px !important;
+		margin-bottom: 0 !important;
+	}
+	
 
 }
-
-@media only screen and (min-width: 462px) and (max-width: 768px) {
+@media only screen and (min-width: 462px) and (max-width: 767px) {
 	#top-menu li.show-submenu ul.sub-menu {
 		padding-top: 15px;
 		width: auto;
@@ -1546,10 +1551,193 @@ tbody tr td #learn-more {
 	.couponCode {
 		right: 42%;
 	}
+	#top-menu li.show-submenu ul.sub-menu {
+		width: 462px;
+	}
+	.woocommerce ul.products li.product a img {
+		height: 250px;
+	}
+	.wpmenucart-contents {
+		right: -6px;
+		bottom: 1px;
+	}
+	#et_top_search {
+		margin-right: 5px;
+		bottom: 6px;
+	}
+	.product-categories {
+		width: 91%;
+	}
+	.et_pb_module #woocommerce_product_categories2-3 .product-categories {
+		top: 60% !important;
+	}
+	
+	.archive #page-container #et-main-area ul.products {
+		padding-left: 10%;
+		width: 90%;
+	}
+	.archive #page-container #et-main-area div #myBtn {
+		margin-left: 10% !important;
+	}
+	.woocommerce-cart table.cart img {
+		width: 100px;
+	}
+	/* pink bg */
+	.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+		background-color: #f3f2ef;
+	}
+	.couponCode {
+		right: 67%;
+	}
+	.shop_table .coupon {
+		margin-bottom: 0 !important;
+	}
+	.woocommerce button.button {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.checkout-button {
+		width: 60%;
+	}
 }
 
 /* ipad */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+	#logo {
+	max-height: 50%;
+	}
+	/* header search*/
+	#et_search_icon:before {
+		top: 0;
+	}
+	
+	#et_top_search {
+		margin-top:0px;
+	}
+	
+	/* hamburger */
+	#top-menu li.mega-menu>ul {
+		width: 34%;
+	}
+	
+	/* footer */
+	.s-company,  .s-products, .s-cc {
+		width: 19.25%;
+		margin-right: 2% !important;
+		margin-left: 2% !important;
+	}
+	.footer-global .footer-tab {
+		width: 90% !important;
+	}
+	
+	
+	.footer-tab {
+		margin: 0 !important;
+	}
+	
+	.et_pb_row_5col>.et_pb_column.et_pb_column_1_5 {
+		width: 20.25%;
+	}
+	.et_pb_row_5col>.et_pb_column.et_pb_column_1_5:nth-child(2) {
+		margin-right: 30px;
+	}
+	.s-social {
+		margin-bottom: 0;
+		width: 20%;
+	}
+	.s-gitl {
+		width: 26.25% !important;	
+	}
+	.footer-tab {
+		display: block;
+	}
+	
+	.gitl {
+		max-width: 87% !important;
+	}
+	
+	#et_pb_contact_footer-email_1 {
+		width: 155%;
+	}
+	/* materials */
+	.et_pb_row_4col {
+		display: block;
+	}
+	/* shop */
+	.woocommerce ul.products li.product a img, .woocommerce-page ul.products li.product a img {
+		height: 316px;
+	}
+	
+	/* archive */
+	.archive #page-container #et-main-area ul.products {
+		width: 100% !important;
+	}
+	
+	/* product page */
+	.woocommerce-product-gallery__trigger {
+		bottom: 27.5%;
+	}
+	
+	/* cart image */
+	.woocommerce-cart table.cart img {
+		width: 175px;
+	}
+	
+	.wc-proceed-to-checkout a {
+		width: 233px;
+	}
+	
+	/* pink bg */
+	.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+		background-color: #f3f2ef;
+	}
+	.couponCode {
+		right: 43%;
+		top: 24px;
+	}
+	.shop_table .coupon{
+		margin-bottom: 0 !important;
+	}
+	.updateCart {
+		margin-bottom: 10px;
+	}
+	
+	.woocommerce-page ul.products li.product:nth-child(n) {
+		width: 42% !important;
+	}
+	.archive #page-container #et-main-area ul.products {
+		padding-left: 12%;
+		width: 92%;
+	}
+	.archive #page-container #et-main-area div #myBtn {
+		margin-left: 12% !important;
+	}
+
+	.collectionTD {
+		width: 38.7% !important;
+		padding-top: 0% !important;
+	}
+	
+	.pPeopleHigh .et_pb_column_3_5 {
+		width: 82%;
+	}
+	
+	.dontComeApart .et_pb_column {
+		width: 100%;
+	}
+	.s-gitl {
+		padding-top: 30px;
+	}
+	
+	#top-menu li.show-submenu ul.sub-menu {
+		padding-top: 15px;
+		width: auto;
+	}
+	
+}
+
+/* ipad */
+@media only screen and (min-width: 981px) and (max-width: 1024px) {
 	#logo {
 	max-height: 50%;
 	}
@@ -1664,6 +1852,7 @@ tbody tr td #learn-more {
 	}
 	
 }
+
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
 .about-row-1 {
