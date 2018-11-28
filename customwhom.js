@@ -6,8 +6,6 @@ function goBack() {
     window.history.back();
 }
 </script>
-
-
 <script>
 /*** Open menu itmes with children on click not hover ***/
 (function($) {
@@ -22,16 +20,15 @@ $('.shopbtt').on('click', function (e) {
 $('.varTrig').click(function() {
 		if ($('.varLabel').is(":visible")) {
 			$('.varLabel').hide();
+			$('.pa_fabric').css({"height": "86px"});
 		} else {
 			$('.pa_fabric').css({"height": "auto"});
 			$(this).next().toggle();
 		}
 });
 
-
-
 jQuery(document).ready(function() {
-jQuery('#top-menu li.mega-menu > a, #et-secondary-nav li.mega-menu > a').click(function(e) {
+jQuery('#top-menu li.mega-menu > a, #et-secondary-nav li.mega-menu > a').on('click touchstart', function(e)  {
 e.preventDefault();
  
 jQuery(this).parent().toggleClass('show-submenu');

@@ -57,3 +57,15 @@ echo do_shortcode('[et_pb_section global_module="1192"][/et_pb_section]');
 
 	echo do_shortcode('[Sassy_Social_Share style="background-color:#f3f2ef;"]');
 ?>
+
+
+
+$('.varTrig').click(function() {
+		if ($('.varLabel').is(":hidden")) {
+			$(this).next().toggle();
+			$(this).parent().css({"height": "auto"});
+		} else {
+			$('.varLabel').hide();
+			$('.pa_fabric').css({"height": "86px"});
+		}
+});
