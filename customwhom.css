@@ -1173,7 +1173,9 @@ dl.variation {
 .et_button_no_icon.woocommerce-page a.button:hover {
 	padding: 0;
 	border: 0;
-	line-height: 2.3em !important;
+	line-height: 2.25em !important;
+	background: inherit;
+	font-size: 13px;
 }
 
 /* login form register */
@@ -1199,20 +1201,31 @@ dl.variation {
 	font-family: 'Acaslon';
 }
 
-.accForm, .post-4983 h2 {
+.post-4983 h2 {
 	font-family: 'Raleway';
 }
+
+.accForm {
+	font-family: 'Raleway';
+	font-size: 12px !important;
+	padding: 8px !important;
+}
+
 .post-4983 h4 {
 	font-size: 18px;
 }
 
-.post-4893 .col-1 {
+.post-4893 .login-1 {
 	margin-top: 8%;
 }
 
 .post-4893 .entry-title {
 	margin-top: 0%;
 	position: absolute;
+}
+
+.post-4893 .entry-title::after {
+	content: '.';
 }
 
 .woocommerce-form-login {
@@ -1222,6 +1235,15 @@ dl.variation {
 input[type=password] {
 	border: 0;
 }
+
+.woocommerce-MyAccount-navigation, .woocommerce-MyAccount-content{
+	margin-top: 50px;
+}
+
+.woocommerce-FormRow .button {
+	width: 80px;
+}
+
 /* 320 to 374 */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
 	.widgettitle {
@@ -1670,6 +1692,13 @@ input[type=password] {
 	}
 	
 }
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+	#logo {
+		max-height: 50%;
+		margin-bottom: 5%;
+	}
+}
+
 @media only screen and (min-width: 462px) and (max-width: 767px) {
 	#top-menu li.show-submenu ul.sub-menu {
 		padding-top: 15px;
@@ -1757,7 +1786,8 @@ input[type=password] {
 		padding-right: 0;
 	}
 	#logo {
-	max-height: 50%;
+		max-height: 50%;
+		margin-bottom: 5%;
 	}
 	/* header search*/
 	#et_search_icon:before {
@@ -1901,7 +1931,7 @@ input[type=password] {
 /* ipad */
 @media only screen and (min-width: 981px) and (max-width: 1024px) {
 	#logo {
-	max-height: 50%;
+	max-height: 40%;
 	}
 	/* header search*/
 	#et_search_icon:before {
