@@ -69,3 +69,10 @@ $('.varTrig').click(function() {
 			$('.pa_fabric').css({"height": "86px"});
 		}
 });
+
+   <p class="form-row form-row-first">
+       <input type="text" class="input-text" name="first_name" id="reg_first_name" placeholder="FIRST NAME" value="<?php if ( ! empty( $_POST['first_name'] ) ) esc_attr_e( $_POST['first_name'] ); ?>" />
+       </p>
+       <p class="form-row form-row-last">
+       <input type="text" class="input-text" name="last_name" id="reg_last_name" placeholder="LAST NAME"value="<?php if ( ! empty( $_POST['last_name'] ) ) esc_attr_e( $_POST['last_name'] ); ?>" />
+       </p>
