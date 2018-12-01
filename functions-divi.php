@@ -9971,39 +9971,25 @@ function custom_woocommerce_template_loop_category_title( $category ) {
 function wooc_extra_register_fields() {
 
        ?>
-	<span class='likePerks'>
-		WHO DOESN'T LIKE PERKS?
+	<div class='likePerks'>
+		WHO DOESN'T LIKE PERKS? <br>
 		SIGN UP FREE TODAY ANG GET:
-	</span>
+	</div>
 	<span class="perks">
-		Saved Payment info
-		Saved addresses
-		No hassle checkout
-		Order tracking
-		Member pricing benefits
+		Saved Payment info <br>
+		Saved addresses <br>
+		No hassle checkout <br>
+ 		Order tracking <br>
+		Member pricing benefits <br> <br>
 	</span>
 
-
-       <p class="form-row form-row-first">
-
-       <label for="reg_first_name"><?php _e( 'First name', 'woocommerce' ); ?><span class="required">*</span></label>
-
-       <input type="text" class="input-text" name="first_name" id="reg_first_name" value="<?php if ( ! empty( $_POST['first_name'] ) ) esc_attr_e( $_POST['first_name'] ); ?>" />
-
+      <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+       <input type="text" class="input-text accForm" name="first_name" id="reg_first_name" placeholder="FIRST NAME" value="<?php if ( ! empty( $_POST['first_name'] ) ) esc_attr_e( $_POST['first_name'] ); ?>" />
        </p>
-
- 
-
-       <p class="form-row form-row-last">
-
-       <label for="reg_last_name"><?php _e( 'Last name', 'woocommerce' ); ?><span class="required">*</span></label>
-
-       <input type="text" class="input-text" name="last_name" id="reg_last_name" value="<?php if ( ! empty( $_POST['last_name'] ) ) esc_attr_e( $_POST['billing_last_name'] ); ?>" />
-
+       <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+       <input type="text" class="input-text accForm" name="last_name" id="reg_last_name" placeholder="LAST NAME"value="<?php if ( ! empty( $_POST['last_name'] ) ) esc_attr_e( $_POST['last_name'] ); ?>" />
        </p>
-
        <div class="clear"></div>
-
        <?php
 }
 add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
@@ -10036,3 +10022,22 @@ function wooc_save_extra_register_fields( $customer_id ) {
 }
 
 add_action( 'woocommerce_created_customer', 'wooc_save_extra_register_fields' );
+
+add_filter('woocommerce_registration_errors', 'registration_errors_validation', 10,3);
+function registration_errors_validation($reg_errors, $sanitized_user_login, $user_email) {
+	global $woocommerce;
+	extract( $_POST );
+	if ( strcmp( $password, $password2 ) !== 0 ) {
+		return new WP_Error( 'registration-error', __( 'Passwords do not match.', 'woocommerce' ) );
+	}
+	return $reg_errors;
+}
+add_action( 'woocommerce_register_form', 'wc_register_form_password_repeat' );
+function wc_register_form_password_repeat() {
+	?>
+	<p class="form-row form-row-wide">
+		<input type="password" class="woocommerce-Input woocommerce-Input--text input-text accForm" name="password2" id="reg_password2" placeholder="CONFIRM PASSWORD" autocomplete="new-password" value="<?php if ( ! empty( $_POST['password2'] ) ) echo esc_attr( $_POST['password2'] ); ?>" />
+	</p><br>
+	<?php
+}
+?>
