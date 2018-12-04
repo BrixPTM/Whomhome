@@ -4996,8 +4996,8 @@ function et_divi_customizer_module_settings( $wp_customize ) {
 			// Captcha Font size: Range 10px - 32px
 			$wp_customize->add_setting( 'et_divi[et_pb_contact_form-captcha_font_size]', array(
 				'default'       => ET_Global_Settings::get_value( 'et_pb_contact_form-captcha_font_size', 'default' ),
-				'type'          => 'option',
-				'capability'    => 'edit_theme_options',
+				'type'          => 'option', 
+				'capability'    => 'edit_theme_options', 
 				'transport'     => 'postMessage',
 				'sanitize_callback' => 'absint',
 			) );

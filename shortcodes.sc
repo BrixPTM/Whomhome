@@ -76,3 +76,8 @@ $('.varTrig').click(function() {
        <p class="form-row form-row-last">
        <input type="text" class="input-text" name="last_name" id="reg_last_name" placeholder="LAST NAME"value="<?php if ( ! empty( $_POST['last_name'] ) ) esc_attr_e( $_POST['last_name'] ); ?>" />
        </p>
+
+
+
+
+			 <form role="search" method="get" class="ds-hide et-search-form" action="https://whomhome.wpengine.com/" style="max-width: 149px; ; font-family:'Acaslon', Palatino; border: none; background-color: #f3f2ef; margin-left: 26%"> 	<input type="search" class="ds-hide et-search-field" placeholder="SEARCH" value="" name="s" title="Search for:" style="font-size: 14px"></form>
