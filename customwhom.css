@@ -1207,8 +1207,9 @@ dl.variation {
 	padding: 0 !important;
 }
 
-.post-4893 h1 {
+.post-4893 h3 {
 	font-family: 'Acaslon';
+	color: #666;
 }
 
 .post-4983 h2 {
@@ -1221,10 +1222,6 @@ dl.variation {
 	padding: 8px !important;
 }
 
-.post-4983 h4 {
-	font-size: 18px;
-}
-
 .post-4893 .login-1 {
 	margin-top: 8%;
 }
@@ -1232,6 +1229,9 @@ dl.variation {
 .post-4893 .entry-title {
 	margin-top: 0%;
 	position: absolute;
+	font-size: 22px;
+	font-family: 'Acaslon';
+	color: #666;
 }
 
 .post-4893 .entry-title::after {
@@ -2102,6 +2102,14 @@ input[type=password] {
 		margin-left: 24.5% !important;
 	}
 }
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+/* slider row */
+	.frontSliderRow {
+		width: 36% !important;
+	}
+}
+
 @media only screen and (min-width: 1441px) and (max-width: 1799px) {
 	.archive #page-container #et-main-area div #myBtn {
 		margin-left: 18.5% !important;
