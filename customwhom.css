@@ -24,7 +24,6 @@ a {
 }
 .logo_container a img {
 	position: relative;
-	bottom: 18%;
 }
 
 .et_pb_text_inner p a, .et_pb_text_inner a {
@@ -1086,11 +1085,6 @@ td.product-total {
 	font-size: 14px;
 }
 
-/* first gallery thumb image*/
-.woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1) {
-	display: none;
-}
-
 .et-pb-active-slide .et_pb_slide_description {
 	animation-name: fadeIn;
 }
@@ -1937,8 +1931,8 @@ input[type=password] {
 /* ipad */
 @media only screen and (min-width: 981px) and (max-width: 1024px) {
 	#logo {
-	max-height: 36%;
-	bottom: 26%;
+	max-height: 50%;
+	bottom: 7%;
 	}
 	/* header search*/
 	#et_search_icon:before {
