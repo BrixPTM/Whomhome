@@ -38,6 +38,9 @@ jQuery(document).click(function(e) {
 if(!$(e.target).closest('.show-submenu').length) {
 jQuery('.show-submenu').removeClass('show-submenu');
 }
+if(!$(e.target).closest('.widgettitle').length) {	
+$('.product-categories').hide();
+}
 });
 	
 	
