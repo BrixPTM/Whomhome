@@ -829,6 +829,7 @@ h1.product_title {
 	text-indent: 1.5em;
 	font-size: 0.6em;
 	font-family: 'Raleway';
+	border-radius: 3px;
 }
 
 .contact-comments {
@@ -862,6 +863,7 @@ h1.product_title {
 	text-indent: 1.5em;
 	font-size: 0.6em;
 	font-family: 'Raleway';
+	border-radius: 3px;
 }
 
 .swatch-state {
@@ -1223,7 +1225,7 @@ dl.variation {
 
 .accForm {
 	font-family: 'Raleway';
-	font-size: 12px !important;
+	font-size: 11px !important;
 	padding: 8px !important;
 }
 
@@ -1272,7 +1274,7 @@ input[type=password] {
 }
 
 /* search */
-#post-2604 h2 {
+.search-results .entry-title {
 	font-family: 'Raleway';
 }
 
