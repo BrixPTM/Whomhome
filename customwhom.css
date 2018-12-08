@@ -16,7 +16,7 @@ a {
 }
 
 #main-header {
-	padding-top: 20px;
+	margin-top: 40px;
 }
 
 .et_header_style_left .logo_container {
@@ -522,10 +522,6 @@ ul.woof_list {
 .et_contact_bottom_container {
 	visibility: visible;
 	left: 10%;
-}
-
-.et_pb_contact_submit {
-	position: inherit;
 }
 
 .et-pb-contact-message {
@@ -1253,6 +1249,7 @@ input[type=password] {
 
 .et-search-form input {
 	text-transform: uppercase;
+	font-family: 'Acaslon';
 }
 
 .woocommerce-MyAccount-navigation, .woocommerce-MyAccount-content{
@@ -1270,10 +1267,65 @@ input[type=password] {
 /* search */
 .search-results .entry-title {
 	font-family: 'Raleway';
+	font-size: 1em;
+}
+
+/* search results */
+.search-results .entry-featured-image-url {
+	width: 40% !important;
+}
+
+.aws-container .aws-search-form {
+	float: right;
+}
+
+.aws-container .aws-search-field:focus {
+	background-color: #f3f2ef;
+}
+
+.aws-container .aws-search-field {
+	border: none;
+	background-color: #f3f2ef;
+	top: 50%;
+	right: 20%;
+}
+
+#aws-search-result-1 {
+	width: 20% !important;
+	right: 14% !important;
+	left: inherit !important;
+	top: 9% !important;
+}
+/* search page */
+.search #left-area {
+	width: 100%;
+	padding: 0 !important;
+    -moz-column-count: 3;
+         column-count: 3;
+}
+.search #left-area .et_pb_post {
+    overflow: hidden; /* fix for Firefox */
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    width: 90%;
 }
 
 .search-results .entry-featured-image-url {
-	width: 40% !important;
+	width: 100% !important;
+}
+
+.search-results h2 {
+	display: flex;
+	justify-content: center;
+}
+
+.search-results .post-meta {
+	display: none;
+}
+
+/*pagination older*/
+.search-results .entry-content, .pagination {
+	display: none;
 }
 
 /* 320 to 374 */
@@ -1441,7 +1493,7 @@ input[type=password] {
 	}
 	
 	#main-header {
-		margin-top:	20px;
+		margin-top:	20px !important;
 	}
 	.wpmenucart-contents {
 		display: block !important;
@@ -2188,12 +2240,15 @@ input[type=password] {
 
 @media only screen and (min-width: 2001px) and (max-width: 2300px) {
 	.et_shop_image {
-	text-align: -webkit-center;
+		text-align: -webkit-center;
 	}	
 	.archive #page-container #et-main-area ul.products {
 		padding-left: 22%;
 		width: 100%;
 		padding-right: 4%;
+	}
+	.et_pb_contact_submit {
+		right: 270%;
 	}
 }
 
@@ -2230,5 +2285,8 @@ input[type=password] {
 		padding-left: 33%;
 		width: 100%;
 		padding-right: 19%;
+	}
+	.et_pb_contact_submit {
+		right: 280%;
 	}
 }
