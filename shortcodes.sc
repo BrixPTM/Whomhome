@@ -84,3 +84,5 @@ $('.varTrig').click(function() {
 
 
 			 <form role="search" method="get" class="ds-hide et-search-form" action="https://whomhome.wpengine.com/" style="max-width: 149px;  font-family:'Acaslon', Palatino; border: none; background-color: #f3f2ef; margin-left: 26%"> 	<input type="search" class="ds-hide et-search-field" placeholder="SEARCH" value="" name="s" title="Search for:" style="font-size: 14px"></form>
+
+			 <form role="search" method="get" class="ds-hide et-search-form" action="https://whomhome.wpengine.com/" style="max-width: 149px;  font-family:'Acaslon', Palatino; border: none; background-color: #f3f2ef; margin-left: 26%"> <input type="hidden" class="" value="product" name="post_type" />
