@@ -1259,8 +1259,9 @@ input[type=password] {
 	width: 40% !important;
 }
 
-.aws-container .aws-search-form {
-	float: right;
+.aws-container {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .aws-container .aws-search-field:focus {
@@ -1273,6 +1274,12 @@ input[type=password] {
 	background-color: #f3f2ef;
 	top: 50%;
 	right: 20%;
+}
+
+.aws-search-result, .aws-search-result-2 {
+	width: 20% !important;
+	top: 14% !important;
+	left: 60% !important;
 }
 
 #aws-search-result-1 {
@@ -1894,6 +1901,22 @@ input[type=password] {
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.aws-container .aws-search-field {
+		text-align: center;
+		top: 0;
+		right: 0;
+	}
+	.aws-search-form {
+		margin-left: 14%;
+	}
+	.aws-container .aws-show-clear .aws-search-field {
+		padding-right: 0;
+	}
+	#aws-search-result-1 {
+		width: 86% !important;
+		right: 7% !important;
+		top: 18% !important;
+	}
 }
 /* end 500px */
 
@@ -2154,6 +2177,9 @@ input[type=password] {
 	}
 	.payment_method_affirm label img {
 		width: 11%;
+	}
+	.aws-search-result {
+		width: 30% !important;
 	}
 }
 
