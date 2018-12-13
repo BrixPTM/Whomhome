@@ -203,7 +203,6 @@ tr {
 	text-transform: uppercase;
 	background-color: #000;
 	font-size: 0.9em;
-	text-transform: uppercase;
 	font-family: 'Raleway';
 }
 
@@ -252,7 +251,7 @@ tr {
 }
 
 /*** hides sub-menu on hover ***/
-#top-menu li.et-hover ul.sub-menu { display: none !important; }
+#top-menu .et-hover ul.sub-menu { display: none !important; }
  
 /*** shows submenu on click ***/
 #top-menu li.show-submenu ul.sub-menu { display: block !important; visibility: visible!important; opacity: 1!important; }
@@ -280,7 +279,6 @@ tr {
     cursor: pointer;
     top: 0;
     left: 0;
-    vertical-align: -11px;
     padding-right: 3px;
 	display: block !important;
     font-size: 32px; /*change size of icon here*/
@@ -308,8 +306,7 @@ tr {
 #top-menu li.mega-menu>ul {
 	right: 2.8%;
 	top: 75%;
-	display: inline-block;
-	width: 20%;
+	width: auto;
 	text-transform: uppercase;
 	border-top: none;
 	padding: 30px 20px 20px 20px;
@@ -1271,6 +1268,7 @@ input[type=password] {
 }
 
 .aws-container .aws-search-field {
+	position: relative;
 	border: none;
 	background-color: #f3f2ef;
 	top: 50%;
@@ -1356,6 +1354,10 @@ input[type=password] {
 	line-height: 1.7em !important;
 	font-size: 14px;
 	color: #585b55 !important;
+}
+
+.cat-item-131 {
+	padding-left: 1%;
 }
 /* 320 to 374 */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
@@ -1454,6 +1456,12 @@ input[type=password] {
 	.pa_fabric {
 		margin-right: -30px;
 	}
+	#coupon_code {
+		width: 125px !important;
+	}
+	.payment_method_affirm label img {
+		width: 30%;
+	}
 }
 /* End 320 to 374 */
 /* 375 to 461 */
@@ -1524,6 +1532,9 @@ input[type=password] {
 	}
 	.et_pb_contact_submit {
 		left: 25%;
+	}
+	.payment_method_affirm label img {
+		width: 30%;
 	}
 }
 /* End 375 to 461 */
@@ -1834,6 +1845,55 @@ input[type=password] {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	.et_pb_row_2.et_pb_row {
+		padding-left: 2.4% !important;
+	}
+	.et_pb_column_6 {
+		padding-left: 1.4% !important;
+	}
+	.matTitle {
+		line-height: 1.5;
+		margin-bottom: 4px;
+	}
+	.swatch-info {
+		padding: 10px !important;
+		font-size: 0.8em;
+		text-indent: 0.5em;
+	}
+	.swatch-zipcode {
+		margin-top: 0;
+	}
+	.swatch-submit {
+		font-size: 12px;
+	}
+	.contact-info {
+		padding: 10px !important;
+		font-size: 0.8em;
+		text-indent: 0.5em;
+	}
+	.contact-comments {
+		font-size: 0.8em;
+	}
+	.contact-submit {
+		font-size:12px;
+	}
+	.woocommerce-form-login {
+		margin-bottom: 60px !important;
+	}
+	.woocommerce form.register {
+		margin: 1em 0;
+	}
+	.fontAcas {
+		padding-right: 10px !important;
+	}
+	.accForm {
+		padding: 10px !important;
+		font-size: 0.8em !important;
+	}
+	.et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 /* end 500px */
 
@@ -1875,9 +1935,6 @@ input[type=password] {
 	}
 	.couponCode {
 		right: 42%;
-	}
-	#top-menu li.show-submenu ul.sub-menu {
-		width: 462px;
 	}
 	.woocommerce ul.products li.product a img {
 		height: 100%;
@@ -2082,10 +2139,9 @@ input[type=password] {
 	
 	#top-menu li.show-submenu ul.sub-menu {
 		padding-top: 15px;
-		width: auto;
 	}
 	.et_pb_contact_submit {
-	left: 10%;
+		left: 10%;
 	}
 	.search #left-area {
 		column-count: 2;
@@ -2095,6 +2151,9 @@ input[type=password] {
 	.et_contact_bottom_container {
 		display: block;
 		margin-left: 94%;
+	}
+	.payment_method_affirm label img {
+		width: 11%;
 	}
 }
 
@@ -2214,7 +2273,6 @@ input[type=password] {
 	
 	#top-menu li.show-submenu ul.sub-menu {
 		padding-top: 15px;
-		width: auto;
 	}
 	
 	.product-categories {
@@ -2243,7 +2301,6 @@ input[type=password] {
 	}
 	#top-menu li.show-submenu ul.sub-menu {
 		padding-top: 15px;
-		width: auto;
 	}
 	.archive #page-container #et-main-area div #myBtn {
 		margin-left: 18% !important;
@@ -2318,7 +2375,7 @@ input[type=password] {
 /* media 1800 - 2000*/
 @media only screen and (min-width: 1800px) and (max-width: 2000px) {
 	.et_shop_image {
-	text-align: -webkit-center;
+		text-align: -webkit-center;
 	}	
 	.archive #page-container #et-main-area ul.products {
 		padding-left: 23%;
@@ -2326,8 +2383,8 @@ input[type=password] {
 		padding-right: 3%;
 	}
 	.about-row-1 {
-	max-width: 92% !important;
-	padding-left: 8% !important;
+		max-width: 92% !important;
+		padding-left: 8% !important;
 	}
 }
 
