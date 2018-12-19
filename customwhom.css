@@ -1057,7 +1057,7 @@ input[type=text], input[type=tel], input[type=email], textarea, .select2-contain
 th.product-total {
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 23% !important;
+	padding-right: 20% !important;
 }
 
 td.product-total {
@@ -1175,7 +1175,7 @@ dl.variation {
 	font-size: 14px;
 }
 .et_button_no_icon.woocommerce-page a.button:hover {
-	padding: 0;
+
 	border: 0;
 	line-height: 2.25em !important;
 	background: inherit;
@@ -1374,8 +1374,8 @@ input[type=password] {
 }
 
 .et_button_no_icon.woocommerce-page a.button:hover {
-	padding: .3em 1em;
-	line-height: 1.7em !important;
+	padding: 0;
+	line-height: 1.7em;
 	font-size: 14px;
 	color: #585b55 !important;
 }
@@ -1410,6 +1410,29 @@ input[type=password] {
 .widget_product_categories {
 	display: flex;
 	justify-content: flex-end;
+}
+
+.tyMsg {
+	font-family: 'Acaslon';
+	font-size: 36px;
+	line-height: 1.3;
+	margin-bottom: 3%;
+	text-transform: initial;
+}
+
+.page-id-9 .product-total {
+	display: flex;
+    justify-content: flex-end;
+}
+
+.page-id-9 .product-total .amount {
+	margin-right: 2% !important;
+}
+
+.page-id-9 .woocommerce-Price-amount {
+	display: flex;
+    justify-content: flex-end;
+    margin-right: 20%;
 }
 
 /* 320 to 374 */
