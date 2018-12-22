@@ -1,0 +1,67 @@
+<a href="https://whomhome.wpengine.com/shop/"><img class="wp-image-5138 alignnone " src="https://whomhome.wpengine.com/wp-content/uploads/2018/10/Trash-Talker-Chair-quarter-view-1-232x300.jpg" alt="" width="600" height="776"></a><a href="https://whomhome.wpengine.com/shop/"><img class="wp-image-3510 alignnone size-full" src="https://whomhome.wpengine.com/wp-content/uploads/2018/11/Trash-Talker-Chair-quarter-view-min.jpg" alt="" width="600" height="777"></a>
+
+
+<p style="text-align: left;"><a href="https://whomhome.wpengine.com/shop/"><img class="wp-image-3511 alignnone size-full" src="https://whomhome.wpengine.com/wp-content/uploads/2018/11/Trash-Talker-Chair-side-view-min.jpg" alt="" width="600" height="777"></a><a href="https://whomhome.wpengine.com/shop/"><img class="wp-image-5139 alignnone " src="https://whomhome.wpengine.com/wp-content/uploads/2018/10/Trash-Talker-Chair-side-view-1-232x300.jpg" alt="" width="601" height="777"></a></p>
+\
+/* add to cart button single variation wrap */
+
+@media only screen and (min-width: 462px) and (max-width: 499px) {
+	.single_variation_wrap {
+		top: 164px;
+	}
+}
+@media only screen and (min-width: 500px) and (max-width: 561px) {
+	.single_variation_wrap {
+		top: 157px;
+	}
+}
+@media only screen and (min-width: 562px) and (max-width: 599px) {
+	.single_variation_wrap {
+		top: 150px;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 661px) {
+	.single_variation_wrap {
+		top: 144px;
+	}
+}
+@media only screen and (min-width: 662px) and (max-width: 719px) {
+	.single_variation_wrap {
+		top: 138px;
+	}
+}
+@media only screen and (min-width: 720px) and (max-width: 768px) {
+	.single_variation_wrap {
+		top: 132px;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 859px) {
+	.single_variation_wrap {
+		top: 155px;
+	}
+}
+@media only screen and (min-width: 860px) and (max-width: 1024px) {
+	.single_variation_wrap {
+		top: 147px;
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1139px) {
+	.single_variation_wrap {
+		top: 140px;
+	}
+}
+@media only screen and (min-width: 1140px) and (max-width: 1279px) {
+	.single_variation_wrap {
+		top: 132px;
+	}
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+	.single_variation_wrap {
+		top: 126px;
+	}
+}
+@media only screen and (min-width: 1441px) and (max-width: 2000px) {
+	.single_variation_wrap {
+		top: 122px;
+	}
+}

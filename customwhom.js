@@ -5,8 +5,7 @@
 function goBack() {
     window.history.back();
 }
-</script>
-<script>
+</script><script>
 /*** Open menu itmes with children on click not hover ***/
 (function($) {
 
@@ -61,6 +60,20 @@ $('.product-categories').hide();
       	}
   	});
 		
+	$("#ship_wrap_toggle").click(function(e) {
+		e.preventDefault();
+    	$("#ship_wrap").slideToggle("slow");
+		$(".single_variation_wrap").css({"top": "216px", "transition" : "ease-in-out 0.6s"});
+	  	if ($("#ship_wrap_toggle").text() == "+ SHIPPING AND RETURNS") {
+
+        	$("#ship_wrap_toggle").html("- SHIPPING AND RETURNS")
+      	}
+	  	else  {		
+        	$("#ship_wrap_toggle").text("+ SHIPPING AND RETURNS")
+			$(".single_variation_wrap").css({"top": "115px", "transition" : "ease-in-out 0.6s"});
+      	}
+  	});
+		
 		$('.widgettitle').click(function(e) {
 			e.preventDefault();
 			if ($('.product-categories').is(":hidden")) {
@@ -103,8 +116,26 @@ $('.product-categories').hide();
 				return false;
 			}
 		});
-			
 });
 		
 });
 </script>
+
+<!-- Start of whom Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e13ecffe-f322-423c-88bc-21d07d68d5dd"> </script>
+<!-- End of whom Zendesk Widget script 
+<script type="text/javascript">
+
+window.setTimeout(function() {
+
+$zopim.livechat.button.show();
+
+$zopim.livechat.window.show();
+
+$zopim.livechat.bubble.show();
+
+//You can add more APIs on this line
+
+}, 10000); //time’s in milliseconds - 30 seconds = 30000
+
+</script> -->
