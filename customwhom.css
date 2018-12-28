@@ -1147,11 +1147,13 @@ dl.variation {
 	font-size: 14px;
 }
 .et_button_no_icon.woocommerce-page a.button:hover {
-
-	border: 0;
 	line-height: 2.25em !important;
+	border: 0;
 	background: inherit;
-	font-size: 13px;
+	font-size: 14px;
+	padding-right: 1em !important;
+	padding: 0;
+	color: #585b55 !important;
 }
 
 /* login form register */
@@ -1343,13 +1345,6 @@ input[type=password] {
 
 .et_pb_post {
 	margin-bottom: 23px;
-}
-
-.et_button_no_icon.woocommerce-page a.button:hover {
-	padding: 0;
-	line-height: 1.7em;
-	font-size: 14px;
-	color: #585b55 !important;
 }
 
 .cat-item-131 {
@@ -2644,3 +2639,65 @@ input[type=password] {
 		top: 66px;
 	}
 }
+
+/* popup */
+.hover_bkgr_fricc {
+    cursor:pointer;
+    display: none;
+    height:100%;
+    position:absolute;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: auto;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 12px;
+    line-height: 24.5px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.popWood, .popFabric, .popMetal {
+	display: none;
+}
+/* popup end*/
