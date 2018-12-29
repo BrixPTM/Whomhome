@@ -148,6 +148,7 @@ tr {
 }
 
 .price {
+	margin-top: 3%;
 	font-family: 'Raleway';
 	font-size: 100% !important;
 	text-align: center;
@@ -166,7 +167,7 @@ tr {
 /* button add to cart product*/
 .single_variation_wrap {
 	display: flex;
-	top: 67px;
+	top: 80px;
 	position: relative;
 }
 
@@ -401,6 +402,8 @@ ul.woof_list {
 .product-categories {
 	position: absolute;
 	display: none;
+	flex-direction: row;
+	flex-wrap: wrap;
 	z-index: 999;
 	background: #fffdf8;
 	top: 50%;
@@ -410,6 +413,10 @@ ul.woof_list {
 	font-family: 'Raleway';
 	font-size: 0.9em;
 	letter-spacing: -0.05px;
+}
+
+.cat-item-142 {
+	padding-top: 1% !important;
 }
 
 /* widget list categories */
@@ -475,6 +482,7 @@ ul.woof_list {
 /* category names*/
 .cat-parent {
 	font-weight: bold;
+	flex: 1 0 20%;
 }
 
 .children {
@@ -1518,6 +1526,13 @@ input[type=password] {
 	.single_variation_wrap {
 		top: 104px;
 	}
+	#custom_fc_button {
+		width: 30% !important;
+	}
+	.chatIcon {
+		width: 18% !important;
+		height: 10px !important;
+	}
 }
 /* End 320 to 374 */
 /* 375 to 461 */
@@ -1595,6 +1610,13 @@ input[type=password] {
 	/* add to cart */
 	.single_variation_wrap {
 		top: 92px;
+	}
+	#custom_fc_button {
+		width: 30% !important;
+	}
+	.chatIcon {
+		width: 20% !important;
+		height: 11px !important;
 	}
 }
 /* End 375 to 461 */
@@ -1987,6 +2009,9 @@ input[type=password] {
 		left: -14%;
 		top: 61%;
 	}
+	.cat-item-142 {
+	padding-top: 5% !important;
+}
 }
 /* end 500px */
 
@@ -2267,6 +2292,13 @@ input[type=password] {
 	.single_variation_wrap {
 		top: 92px;
 	}
+	#custom_fc_button {
+		width: 22% !important;
+	}
+	.chatIcon {
+		width: 15% !important;
+		height: 12px !important;
+	}
 }
 
 /* ipad */
@@ -2415,6 +2447,15 @@ input[type=password] {
 	.single_variation_wrap {
 		top: 85px;
 	}
+	
+	.chatButton {
+		padding: 8% 16% !important;
+	}
+	
+	.chatIcon {
+		width: 20% !important;
+		height: 12px !important;
+	}
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -2455,6 +2496,13 @@ input[type=password] {
 		width: 22% !important;
     	top: 12% !important;
 		left: 64% !important;
+	}
+	.chatButton {
+		padding: 6% 20% !important;
+	}
+	
+	.chatIcon {
+		height: 13px !important;
 	}
 }
 
@@ -2502,6 +2550,12 @@ input[type=password] {
     	top: 12% !important;
 		left: 65% !important;
 		width: 20% !important;
+	}
+	.chatIcon {
+		height: 14px !important;
+	}
+	.chatButton {
+		padding: 6% 16% !important;
 	}
 }
 
@@ -2583,6 +2637,10 @@ input[type=password] {
 		width: 12% !important;
     	top: 8.5% !important;
 		left: 59% !important;
+	}
+	
+	.chatButton {
+		padding: 5% 16% !important;
 	}
 }
 
@@ -2701,3 +2759,12 @@ input[type=password] {
 	display: none;
 }
 /* popup end*/
+
+/* freshchat button */
+#custom_fc_button {
+  width: 10.5%;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  z-index: 100;
+}
