@@ -844,10 +844,10 @@ h1.product_title {
 }
 
 .swatch-zipcode {
-	margin-top: 3px;
+	margin-top: -30px;
 	float: right;
 	width: 50%;
-	padding: 6px;
+	padding: 1px;
 }
 
 .swatch-button {
@@ -1527,11 +1527,16 @@ input[type=password] {
 		top: 104px;
 	}
 	#custom_fc_button {
-		width: 30% !important;
+		width: 38% !important;
+		right: -6% !important;
+	}
+	.chatButton {
+		padding: 6% 16% !important;
 	}
 	.chatIcon {
-		width: 18% !important;
-		height: 10px !important;
+		width: 20% !important;
+		height: 16px !important;
+		margin-bottom: -3px !important;
 	}
 }
 /* End 320 to 374 */
@@ -1609,20 +1614,39 @@ input[type=password] {
 	}
 	/* add to cart */
 	.single_variation_wrap {
-		top: 92px;
+		top: 101px;
 	}
 	#custom_fc_button {
-		width: 30% !important;
+		width: 31% !important;
+		right: -4.5% !important;
+	}
+	.chatButton {
+		padding: 6% 16% !important;
 	}
 	.chatIcon {
 		width: 20% !important;
-		height: 11px !important;
+		height: 16px !important;
+		margin-bottom: -3px !important;
 	}
 }
 /* End 375 to 461 */
 
+@media only screen and (min-width: 462px) and (max-width: 499px) {
+	#custom_fc_button {
+		width: 31% !important;
+		right: -7% !important;
+	}
+	.chatButton {
+		padding: 4% 16% !important;
+	}
+	.chatIcon {
+		width: 17% !important;
+		height: 16px !important;
+		margin-bottom: -4px !important;
+	}
+}
+
 @media only screen and (max-width: 500px) {
-	
 	.ds-hide {
 		display: block;
 	}
@@ -1943,7 +1967,7 @@ input[type=password] {
 		text-indent: 0.5em;
 	}
 	.swatch-zipcode {
-		margin-top: 0;
+		margin-top: -40px;
 	}
 	.swatch-submit {
 		font-size: 12px;
@@ -2171,7 +2195,7 @@ input[type=password] {
 		padding: 0;
 	}
 	.et_pb_newsletter .et_pb_newsletter_fields>* {
-		flex-basis: 0;
+		flex-basis: auto;
 	}
 	.et_pb_newsletter_button {
 		bottom: 7%;
@@ -2186,7 +2210,7 @@ input[type=password] {
 	
 	.et_pb_signup_0.et_pb_subscribe .et_pb_button {
 		padding: 0 !important;
-		left: 30%;
+		right: 45%;
 	}
 	
 	/* materials */
@@ -2293,14 +2317,19 @@ input[type=password] {
 		top: 92px;
 	}
 	#custom_fc_button {
-		width: 22% !important;
+		width: 18% !important;
+		right: -4% !important;
+	}
+	.chatButton {
+		padding: 4% 16% !important;
 	}
 	.chatIcon {
-		width: 15% !important;
-		height: 12px !important;
+		width: 17% !important;
+		height: 15px !important;
+		margin-bottom: -3px !important;
 	}
 }
-
+/* end 768 - 980 */
 /* ipad */
 @media only screen and (min-width: 981px) and (max-width: 1024px) {
 	#logo {
@@ -2445,19 +2474,21 @@ input[type=password] {
 		left: 65% !important;
 	}
 	.single_variation_wrap {
-		top: 85px;
+		top: 96px;
 	}
-	
 	.chatButton {
-		padding: 8% 16% !important;
+		padding: 7% 16% !important;
 	}
-	
+	#custom_fc_button {
+  		right: -2% !important;
+	}
 	.chatIcon {
 		width: 20% !important;
-		height: 12px !important;
+		height: 16px !important;
+		margin-bottom: -3px !important;
 	}
 }
-
+/* end 981 1024*/
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
 	.about-row-1 {
 	max-width: 88%;
@@ -2497,13 +2528,6 @@ input[type=password] {
     	top: 12% !important;
 		left: 64% !important;
 	}
-	.chatButton {
-		padding: 6% 20% !important;
-	}
-	
-	.chatIcon {
-		height: 13px !important;
-	}
 }
 
 @media only screen and (min-width: 1441px) {
@@ -2535,7 +2559,7 @@ input[type=password] {
 		margin-left: 18.5% !important;
 	}
 	.et_pb_contact_submit {
-	right: 190%;
+		right: 190%;
 	}
 }
 
@@ -2550,12 +2574,6 @@ input[type=password] {
     	top: 12% !important;
 		left: 65% !important;
 		width: 20% !important;
-	}
-	.chatIcon {
-		height: 14px !important;
-	}
-	.chatButton {
-		padding: 6% 16% !important;
 	}
 }
 
@@ -2577,6 +2595,17 @@ input[type=password] {
 		width: 12% !important;
     	top: 10% !important;
 		left: 65% !important;
+	}
+	.chatButton {
+		padding: 3% 16% !important;
+	}
+	#custom_fc_button {
+  		right: -5% !important;
+	}
+	.chatIcon {
+		width: 10% !important;
+		height: 14px !important;
+		margin-bottom: -2px !important;
 	}
 }
 
@@ -2640,7 +2669,7 @@ input[type=password] {
 	}
 	
 	.chatButton {
-		padding: 5% 16% !important;
+		padding: 3% 16% !important;
 	}
 }
 
@@ -2678,12 +2707,15 @@ input[type=password] {
 }
 @media only screen and (min-width: 635px) and (max-width: 767px) {
 	.single_variation_wrap {
-		top: 80px;
+		top: 71px;
 	}
 }
 @media only screen and (width: 768px) {
+	.woocommerce-product-gallery__trigger {
+		bottom: 26%;
+	}
 	.single_variation_wrap {
-		top: 50px;
+		top: 69px;
 	}
 }
 
@@ -2694,7 +2726,18 @@ input[type=password] {
 }
 @media only screen and (min-width: 1154px) and (max-width: 1440px) {
 	.single_variation_wrap {
-		top: 66px;
+		top: 80px;
+	}
+	.chatButton {
+		padding: 5% 16% !important;
+	}
+	#custom_fc_button {
+  		right: -3.5% !important;
+	}
+	.chatIcon {
+		width: 15% !important;
+		height: 14px !important;
+		margin-bottom: -2px !important;
 	}
 }
 
@@ -2762,9 +2805,32 @@ input[type=password] {
 
 /* freshchat button */
 #custom_fc_button {
-  width: 10.5%;
+  width: 12%;
   position: fixed;
-  right: 1px;
+  right: -6%;
   bottom: 1px;
   z-index: 100;
+}
+
+.et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
+	padding-bottom: 0;
+}
+
+.sliderWhom {
+	margin-bottom: 4px !important;
+}
+
+.shopNow2 {
+	display: block; 
+	position: relative; 
+	bottom: 46px;
+	font-family: 'Acaslon';
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	color: #595959;
+	background: rgba(255,255,255,0.4);
+}
+.et_pb_bg_layout_dark .et_pb_slide_description {
+	text-shadow: none;
 }
