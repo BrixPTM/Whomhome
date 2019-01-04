@@ -951,7 +951,8 @@ h1.product_title {
 .et_button_no_icon.woocommerce-page button.button:hover{
 	background: #000 !important;
 	color: #fff !important;
-	border: 0;
+	border: 1px solid !important;
+	line-height: 1.7em !important;
 }
 
 .cart_totals h2 {
@@ -1154,14 +1155,26 @@ dl.variation {
 .woocommerce-page a.button {
 	font-size: 14px;
 }
-.et_button_no_icon.woocommerce-page a.button:hover {
-	line-height: 2.25em !important;
+.page-id-8 .checkout-button:hover {
+	line-height: 1.7em;
 	border: 0;
 	background: inherit;
 	font-size: 14px;
-	padding-right: 1em !important;
-	padding: 0;
-	color: #585b55 !important;
+	padding: .3em 1em ;
+}
+
+.page-id-8 .woocommerce a.button:hover {
+	color: #fff !important;
+}
+
+.page-id-4893 a.button:hover {
+	line-height: 1.7em !important;
+	border: 0;
+	background: inherit;
+	font-size: 14px;
+	padding: .3em 1em !important;
+	color: #595959 !important;
+	padding-left: 0 !important;
 }
 
 /* login form register */
@@ -1526,17 +1539,8 @@ input[type=password] {
 	.single_variation_wrap {
 		top: 104px;
 	}
-	#custom_fc_button {
-		width: 38% !important;
-		right: -6% !important;
-	}
 	.chatButton {
 		padding: 6% 16% !important;
-	}
-	.chatIcon {
-		width: 20% !important;
-		height: 16px !important;
-		margin-bottom: -3px !important;
 	}
 }
 /* End 320 to 374 */
@@ -1616,33 +1620,17 @@ input[type=password] {
 	.single_variation_wrap {
 		top: 101px;
 	}
-	#custom_fc_button {
-		width: 31% !important;
-		right: -4.5% !important;
-	}
 	.chatButton {
 		padding: 6% 16% !important;
 	}
-	.chatIcon {
-		width: 20% !important;
-		height: 16px !important;
-		margin-bottom: -3px !important;
-	}
+
 }
 /* End 375 to 461 */
 
 @media only screen and (min-width: 462px) and (max-width: 499px) {
-	#custom_fc_button {
-		width: 31% !important;
-		right: -7% !important;
-	}
+
 	.chatButton {
 		padding: 4% 16% !important;
-	}
-	.chatIcon {
-		width: 17% !important;
-		height: 16px !important;
-		margin-bottom: -4px !important;
 	}
 }
 
@@ -2052,6 +2040,7 @@ input[type=password] {
 		width: 128% !important;
 		left: -13%;
 	}
+
 }
 
 @media only screen and (min-width: 462px) and (max-width: 767px) {
@@ -2316,18 +2305,10 @@ input[type=password] {
 	.single_variation_wrap {
 		top: 92px;
 	}
-	#custom_fc_button {
-		width: 18% !important;
-		right: -4% !important;
-	}
 	.chatButton {
 		padding: 4% 16% !important;
 	}
-	.chatIcon {
-		width: 17% !important;
-		height: 15px !important;
-		margin-bottom: -3px !important;
-	}
+
 }
 /* end 768 - 980 */
 /* ipad */
@@ -2479,13 +2460,20 @@ input[type=password] {
 	.chatButton {
 		padding: 7% 16% !important;
 	}
-	#custom_fc_button {
-  		right: -2% !important;
+
+	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
+		width: 80%;
+		height: 80%;
 	}
-	.chatIcon {
-		width: 20% !important;
-		height: 16px !important;
-		margin-bottom: -3px !important;
+	.et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
+		padding: 0 8%;
+	}
+	.shopNow2 {
+ 	   margin-left: 10%;
+       width: 80%;
+	}
+	.sliderWhom { 
+		margin-bottom: 10px !important;
 	}
 }
 /* end 981 1024*/
@@ -2528,6 +2516,21 @@ input[type=password] {
     	top: 12% !important;
 		left: 64% !important;
 	}
+	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
+		width: 80%;
+		height: 80%;
+	}
+	.et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
+		padding: 5% 8%;
+	}
+	.shopNow2 {
+ 	   margin-left: 10%;
+       width: 80%;
+	}
+	.sliderWhom { 
+		margin-bottom: 10px !important;
+	}
+
 }
 
 @media only screen and (min-width: 1441px) {
@@ -2560,6 +2563,21 @@ input[type=password] {
 	}
 	.et_pb_contact_submit {
 		right: 190%;
+	}
+	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
+		width: 96%;
+		height: 96%;
+	}
+	.et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
+		padding: 5% 8%;
+	}
+	.shopNow2 {
+ 	   margin-left: 2%;
+       width: 96%;
+	}
+	.sliderWhom {
+		top: 40px;
+		margin-bottom: 40px !important;
 	}
 }
 
@@ -2599,14 +2617,22 @@ input[type=password] {
 	.chatButton {
 		padding: 3% 16% !important;
 	}
-	#custom_fc_button {
-  		right: -5% !important;
+
+	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
+		width: 88%; 
+		height: 88%;
 	}
-	.chatIcon {
-		width: 10% !important;
-		height: 14px !important;
-		margin-bottom: -2px !important;
+	.et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
+		padding: 10% 8%;
 	}
+	.shopNow2 {
+ 	   margin-left: 6%;
+       width: 88%;
+	}
+	.sliderWhom {
+		top: 60px;
+		margin-bottom: 100px !important;
+	}	
 }
 
 @media only screen and (min-width: 2001px) and (max-width: 2300px) {
@@ -2631,7 +2657,7 @@ input[type=password] {
 	}
 }
 
-@media only screen and (min-width: 2301px) and (max-width: 2600px) {
+@media only screen and (min-width: 2301px) and (max-width: 2800px) {
 	#top-menu li.show-submenu ul.sub-menu {
 		padding-top: 30px;
 	}
@@ -2670,6 +2696,21 @@ input[type=password] {
 	
 	.chatButton {
 		padding: 3% 16% !important;
+	}
+	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
+		width: 96%;
+		height: 96%;
+	}
+	.et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
+		padding: 5% 8%;
+	}
+	.shopNow2 {
+ 	   margin-left: 2%;
+       width: 96%;
+	}
+	.sliderWhom {
+		top: 40px;
+		margin-bottom: 40px !important;
 	}
 }
 
@@ -2727,17 +2768,6 @@ input[type=password] {
 @media only screen and (min-width: 1154px) and (max-width: 1440px) {
 	.single_variation_wrap {
 		top: 80px;
-	}
-	.chatButton {
-		padding: 5% 16% !important;
-	}
-	#custom_fc_button {
-  		right: -3.5% !important;
-	}
-	.chatIcon {
-		width: 15% !important;
-		height: 14px !important;
-		margin-bottom: -2px !important;
 	}
 }
 
@@ -2805,11 +2835,20 @@ input[type=password] {
 
 /* freshchat button */
 #custom_fc_button {
-  width: 12%;
+  width: 12em;
   position: fixed;
-  right: -6%;
-  bottom: 1px;
   z-index: 100;
+  bottom: 0px;
+  right: -3rem; 
+}
+
+.chatButton {
+	padding: 5% 16% !important;
+}
+.chatIcon {
+	width: 2em !important;
+	height: 1.5em !important;
+	margin-bottom: -3px !important;
 }
 
 .et_pb_slide_description, .et_pb_slider_fullwidth_off .et_pb_slide_description {
@@ -2817,7 +2856,7 @@ input[type=password] {
 }
 
 .sliderWhom {
-	margin-bottom: 4px !important;
+	margin-bottom: 4px;
 }
 
 .shopNow2 {
@@ -2833,4 +2872,10 @@ input[type=password] {
 }
 .et_pb_bg_layout_dark .et_pb_slide_description {
 	text-shadow: none;
+}
+
+@media only screen and (max-width: 980px) {
+	.shopNow2 {
+		bottom: 43px;
+	}
 }
