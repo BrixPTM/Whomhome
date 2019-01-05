@@ -4,6 +4,10 @@ body {
     width: 100%;
 }
 
+.hide {
+	display: none !important;
+}
+
 .cat-item-15 {
 	display: none !important;
 }
@@ -927,7 +931,7 @@ h1.product_title {
 .woocommerce button.button:disabled {
 	text-transform: uppercase !important;
 	font-size: 14px;
-	border: 1px solid;
+	border: 0;
 	border-radius: 0;
 	clear: both;
 	float: right;
@@ -951,7 +955,7 @@ h1.product_title {
 .et_button_no_icon.woocommerce-page button.button:hover{
 	background: #000 !important;
 	color: #fff !important;
-	border: 1px solid !important;
+	border: 0;
 	line-height: 1.7em !important;
 }
 
@@ -1005,7 +1009,7 @@ h1.product_title {
 	font-size: 12px;
 }
 
-.woocommerce-billing-fields__field-wrapper {
+.woocommerce-billing-fields__field-wrapper,.woocommerce-shipping-fields__field-wrapper {
 	font-size: 11px;
 }
 
@@ -2839,7 +2843,7 @@ input[type=password] {
   position: fixed;
   z-index: 100;
   bottom: 0px;
-  right: -3rem; 
+  right: -3.03rem; 
 }
 
 .chatButton {
@@ -2863,10 +2867,10 @@ input[type=password] {
 	display: block; 
 	position: relative; 
 	bottom: 46px;
-	font-family: 'Acaslon';
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: 0.8px;
+	font-family: 'Raleway';
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 0.6px;
 	color: #595959;
 	background: rgba(255,255,255,0.4);
 }
@@ -2876,6 +2880,27 @@ input[type=password] {
 
 @media only screen and (max-width: 980px) {
 	.shopNow2 {
-		bottom: 43px;
+		bottom: 42px;
 	}
+}
+
+.customButton {
+	border: 0;
+	background-color: inherit;
+}
+
+.page-id-9 .cart-subtotal td span.woocommerce-Price-amount,
+.page-id-9 .order-total td span.woocommerce-Price-amount{
+	padding-right: 0;
+}
+
+.page-id-9 .shipping td {
+	display: flex;
+	flex-direction: row-reverse;
+	padding-right: 20% !important;
+}
+
+.et_pb_newsletter_form input[type=text] {
+	width: 200% !important;
+	font-size:12px !important;
 }
