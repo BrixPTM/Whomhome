@@ -516,8 +516,6 @@ ul.woof_list {
 	font-family: 'Raleway';
 	padding-top: 10px;
 	font-size: 12px;
-	display: flex;
-	justify-content: center;
 }
 
 /* social media icon colors*/
@@ -1438,6 +1436,16 @@ input[type=password] {
 	padding: 0 !important;
 }
 
+.et_pb_contact_submit {
+	text-transform: uppercase;
+}
+
+.et_pb_contact_submit:hover {
+	background-color: inherit;
+	color: #585b55 !important;
+}
+
+
 /* 320 to 374 */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
 	.widgettitle {
@@ -1511,9 +1519,6 @@ input[type=password] {
 	}
 	.et_pb_contact_form_1.et_pb_contact_form_container .input {
 		color: #595959 !important;
-	}
-	.et_pb_contact_field_0 {
-		background-color: #f3f2ef;
 	}
 	.et_pb_contact_submit {
 	left: 25%;
@@ -1607,9 +1612,6 @@ input[type=password] {
 	}
 	.et_pb_contact_form_1.et_pb_contact_form_container .input {
 		color: #595959 !important;
-	}
-	.et_pb_contact_field_0 {
-		background-color: #f3f2ef !important;
 	}
 	/* view cart button */
 	.woocommerce-page a.button {
@@ -2215,8 +2217,8 @@ input[type=password] {
 	}
 	
 	.et_pb_signup_0.et_pb_subscribe .et_pb_button {
-		padding: 0 !important;
 		right: 45%;
+		bottom: 5%;
 	}
 	
 	/* materials */
@@ -2325,7 +2327,6 @@ input[type=password] {
 	.chatButton {
 		padding: 4% 16% !important;
 	}
-
 }
 /* end 768 - 980 */
 /* ipad */
@@ -2457,9 +2458,7 @@ input[type=password] {
 		padding-left: 11.5% !important; 
 		padding-bottom: 3% !important;
 	}
-	.et_pb_contact_submit {
-	right: 120%;
-	}
+
 	.et_contact_bottom_container {
 		margin-left: 85%;
 	}
@@ -2525,9 +2524,7 @@ input[type=password] {
 	#logo {
 		max-height: 100%;
 	}
-	.et_pb_contact_submit {
-		right: 140%;
-	}
+
 	.aws-search-result {
 		width: 22% !important;
     	top: 12% !important;
@@ -2569,17 +2566,11 @@ input[type=password] {
 	.frontSliderRow {
 		width: 36% !important;
 	}
-	.et_pb_contact_submit {
-	right: 150%;
-	}
 }
 
 @media only screen and (min-width: 1501px) and (max-width: 1799px) {
 	.archive #page-container #et-main-area div #myBtn {
 		margin-left: 18.5% !important;
-	}
-	.et_pb_contact_submit {
-		right: 190%;
 	}
 	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
 		width: 96%;
@@ -2601,9 +2592,6 @@ input[type=password] {
 @media only screen and (min-width: 1441px) and (max-width: 1799px) {
 	.archive #page-container #et-main-area div #myBtn {
 		margin-left: 18.5% !important;
-	}
-	.et_pb_contact_submit {
-		right: 150%;
 	}
 	.aws-search-result {
     	top: 12% !important;
@@ -2661,9 +2649,6 @@ input[type=password] {
 		width: 100%;
 		padding-right: 4%;
 	}
-	.et_pb_contact_submit {
-		right: 270%;
-	}
 	.cttGoBack {
 		right: 6%;
 	}
@@ -2700,7 +2685,6 @@ input[type=password] {
 	.et_contact_bottom_container {
 		display: flex;
 		justify-content: flex-end;
-		margin-right: 18%;
 	}
 	.cttGoBack {
 		right: 10%;
@@ -2739,9 +2723,6 @@ input[type=password] {
 		padding-left: 33%;
 		width: 100%;
 		padding-right: 19%;
-	}
-	.et_pb_contact_submit {
-		right: 280%;
 	}
 	.cttGoBack {
 		right: 12%;
@@ -2920,4 +2901,57 @@ input[type=password] {
 
 .et_pb_slide_content p {
 	bottom: 0;
+}
+
+/* blog */
+.ds-blog-square a img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.ds-blog-square h2 {
+    margin: 0;
+    padding: 0;
+}
+.et_pb_blog_grid .et_pb_post {
+	border: 0;
+	background-color: inherit;
+}
+
+.post-content {
+	margin-top: 10px;
+}
+
+/* 2 column */
+.ds-blog-two-column.et_pb_column_4_4 .et_pb_blog_grid[data-columns]::before {
+    content: '2 .column.size-1of2' !important;
+}
+.ds-blog-square-two .et_pb_blog_grid .column {
+    width: 47% !important;
+    margin-right: 5.5%;
+}
+.ds-blog-square-two .et_pb_blog_grid .column:nth-child(even) {
+    margin-right: 0;
+}
+
+.ds-blog-two-column .et_pb_post {
+    margin-bottom: 12%;
+}
+
+@media only screen and (max-width: 500px) {
+	.ds-blog-square-two .et_pb_blog_grid .column {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+	.ds-blog-square-two .et_pb_blog_grid .column {
+		width: 100% !important;
+	}
+	.et_pb_column .et_pb_blog_grid .column.size-1of1 .et_pb_post {
+		margin-right: 3%;
+	}
+	.size-1of1 {
+		display: flex;
+	}
 }
