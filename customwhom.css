@@ -1425,6 +1425,12 @@ input[type=password] {
     margin-right: 20%;
 }
 
+#post-9 tfoot tr:nth-child(2) td, #post-9 tfoot tr:nth-child(3) td, #post-9 tfoot tr:nth-child(5) td {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20%;
+}
+
 .flex-control-thumbs li img {
 	-webkit-backface-visibility: hidden;
 }
@@ -2034,6 +2040,11 @@ input[type=password] {
 	.cat-item-142 {
 		padding-top: 5% !important;
 	}
+	#post-9 tfoot tr:nth-child(3) td, #post-9 tfoot tr:nth-child(5) td {
+		display: flex;
+		justify-content: inherit;
+		padding-right: 0;
+	}
 }
 /* end 500px */
 
@@ -2326,6 +2337,10 @@ input[type=password] {
 	}
 	.chatButton {
 		padding: 4% 16% !important;
+	}
+	#post-9 tfoot tr:nth-child(3) td, #post-9 tfoot tr:nth-child(5) td {
+		display: flex;
+		justify-content: inherit;
 	}
 }
 /* end 768 - 980 */
