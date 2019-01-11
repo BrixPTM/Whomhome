@@ -2047,8 +2047,8 @@ input[type=password] {
 	}
 	#post-9 tfoot tr:nth-child(3) td, #post-9 tfoot tr:nth-child(5) td {
 		display: flex;
-		justify-content: inherit;
-		padding-right: 0;
+		justify-content: flex-end;
+		padding-right: 20%;
 	}
 }
 /* end 500px */
@@ -2980,7 +2980,7 @@ input[type=password] {
 }
 
 .featuredBlog .entry-featured-image-url {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .et_pb_post .entry-title, .et_pb_post .entry-content {
@@ -3001,4 +3001,16 @@ input[type=password] {
 .single-post .entry-title {
 	width: 77%;
 	margin: auto;
+}
+
+.page-id-5594 .entry-title {
+	padding-bottom: 0;
+}
+.post-1, .post-5599, .post-5613 {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.postid-1 #left-area, .postid-5599 #left-area, .postid-5613 #left-area {
+	padding-bottom: 0;
 }
