@@ -2017,10 +2017,10 @@ input[type=password] {
 	@media not all and (min-resolution:.001dpcm) { 
     	@media {
         	.aws-container .aws-search-field {
-		top: -9px; 
-		}
-    }
-}
+				top: -9px; 
+			}
+   		}
+	}
 	
 	.aws-search-form {
 		margin-left: 14%;
@@ -2860,7 +2860,7 @@ input[type=password] {
   width: 12em;
   position: fixed;
   z-index: 100;
-  bottom: 0px;
+  bottom: 0;
   right: -3.03rem; 
 }
 
@@ -2942,7 +2942,7 @@ input[type=password] {
 }
 
 .post-content {
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 /* 2 column */
@@ -3003,6 +3003,10 @@ input[type=password] {
 	margin: auto;
 }
 
+.single-post .entry-content ul {
+	padding-left: 0 !important;
+}
+
 .page-id-5594 .entry-title {
 	padding-bottom: 0;
 }
@@ -3013,4 +3017,8 @@ input[type=password] {
 
 .postid-1 #left-area, .postid-5599 #left-area, .postid-5613 #left-area {
 	padding-bottom: 0;
+}
+
+.optinButton, .et_pb_button {
+	display: none;
 }
