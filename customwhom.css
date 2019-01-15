@@ -1300,7 +1300,7 @@ input[type=password] {
 	width: 20% !important;
 	right: 14% !important;
 	left: inherit !important;
-	top: 9% !important;
+	top: 16% !important;
 }
 /* search page */
 .search #left-area {
@@ -1562,6 +1562,9 @@ input[type=password] {
 	.chatButton {
 		padding: 6% 16% !important;
 	}
+	#aws-search-result-1 {
+		top: 30% !important;
+	}
 }
 /* End 320 to 374 */
 /* 375 to 461 */
@@ -1643,7 +1646,9 @@ input[type=password] {
 	.shopNow2 {
 		bottom: 27.5px !important;
 	}
-
+	#aws-search-result-1 {
+		top: 28% !important;
+	}
 }
 /* End 375 to 461 */
 
@@ -2030,7 +2035,7 @@ input[type=password] {
 	#aws-search-result-1 {
 		width: 86% !important;
 		right: 8% !important;
-		top: 23% !important;
+		top: 12%;
 	}
 	#top-menu .aws-search-form {
 		display: block;
@@ -2329,7 +2334,7 @@ input[type=password] {
 	}
 	.aws-search-result {
 		width: 30% !important;
-    	top: 21% !important;
+    	top: 11% !important;
 		left: 58% !important;
 	}
 	.et_pb_gutters3 .et_pb_column_4_4 .et_pb_widget {
@@ -2546,7 +2551,7 @@ input[type=password] {
 
 	.aws-search-result {
 		width: 22% !important;
-    	top: 12% !important;
+    	top: 16% !important;
 		left: 64% !important;
 	}
 	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
@@ -2614,7 +2619,7 @@ input[type=password] {
 	}
 	.aws-search-result {
     	top: 12% !important;
-		left: 65% !important;
+		left: 62% !important;
 		width: 20% !important;
 	}
 	.single-post .entry-title {
@@ -2639,7 +2644,7 @@ input[type=password] {
 	}
 	.aws-search-result {
 		width: 12% !important;
-    	top: 10% !important;
+    	top: 14% !important;
 		left: 65% !important;
 	}
 	.chatButton {
@@ -2714,8 +2719,8 @@ input[type=password] {
 	}
 	.aws-search-result {
 		width: 12% !important;
-    	top: 8.5% !important;
-		left: 59% !important;
+    	top: 3.5% !important;
+		left: 58% !important;
 	}
 	
 	.chatButton {
