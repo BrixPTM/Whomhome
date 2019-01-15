@@ -171,7 +171,7 @@ tr {
 /* button add to cart product*/
 .single_variation_wrap {
 	display: flex;
-	top: 80px;
+	top: 5rem;
 	position: relative;
 }
 
@@ -264,7 +264,6 @@ tr {
     -moz-osx-font-smoothing: grayscale;
     line-height: 0.6em;
     text-transform: none;
-    speak: none;
     position: relative;
     cursor: pointer;
     top: 0;
@@ -1636,7 +1635,7 @@ input[type=password] {
 	}
 	/* add to cart */
 	.single_variation_wrap {
-		top: 101px;
+		top: 6.5rem;
 	}
 	.chatButton {
 		padding: 6% 16% !important;
@@ -2338,7 +2337,7 @@ input[type=password] {
 	}
 	/* add to cart */
 	.single_variation_wrap {
-		top: 92px;
+		top: 6.2rem;
 	}
 	.chatButton {
 		padding: 4% 16% !important;
@@ -2760,17 +2759,17 @@ input[type=password] {
 
 @media only screen and (min-width: 462px) and (max-width: 499px) {
 	.single_variation_wrap {
-		top: 110px;
+		top: 7.3rem;
 	}
 }
 @media only screen and (min-width: 500px) and (max-width: 634px) {
 	.single_variation_wrap {
-		top: 85px;
+		top: 6.9rem;
 	}
 }
 @media only screen and (min-width: 635px) and (max-width: 767px) {
 	.single_variation_wrap {
-		top: 71px;
+		top: 5.6rem;
 	}
 }
 @media only screen and (width: 768px) {
@@ -2778,18 +2777,18 @@ input[type=password] {
 		bottom: 26%;
 	}
 	.single_variation_wrap {
-		top: 69px;
+		top: 4.5rem;
 	}
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1153px) {
 	.single_variation_wrap {
-		top: 75px;
+		top: 5.8rem;
 	}
 }
 @media only screen and (min-width: 1154px) and (max-width: 1440px) {
 	.single_variation_wrap {
-		top: 80px;
+		top: 5.3rem;
 	}
 }
 
@@ -3022,3 +3021,9 @@ input[type=password] {
 .optinButton, .et_pb_button {
 	display: none;
 }
+/* reset password */
+.woocommerce-ResetPassword {
+	margin-top: 20px;
+}
+
+/* test */
