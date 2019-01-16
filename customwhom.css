@@ -115,7 +115,11 @@ tr {
 
 /* read more trigger */
 
-.specs_toggle_wrapper, .ship_toggle_wrapper {
+.specs_toggle_wrapper {
+	margin-bottom: 10px;
+}
+
+.ship_toggle_wrapper {
 	margin-bottom: 10px;
 }
 
