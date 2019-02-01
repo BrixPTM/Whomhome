@@ -27,7 +27,6 @@ function display_attribute_for_variations(){
 
 //works
 
-add_action( 'woocommerce_after_shop_loop_item', 'display_attribute_for_variations' );
 function display_attribute_for_variations(){
 	global $post;
 	$attribute_names = array( 'pa_fabric'); // Add attribute names here and remember to add the pa_ prefix to the attribute name
@@ -38,8 +37,8 @@ function display_attribute_for_variations(){
 		if ( $taxonomy && ! is_wp_error( $taxonomy ) ) {
 			$terms = wp_get_post_terms( $post->ID, $attribute_name );
 			$terms_array = array();
-		
-	        if ( ! empty( $terms ) ) {
+			
+	        if ( ! empty( $terms ) && $attribute_name =='pa_fabric') {
 		        foreach ( $terms as $term ) {
 				   $value = get_term_meta( $term->term_id, 'alg_wc_civs_term_image_image_id', true );
 				   $image_src = wp_get_attachment_image_src( $value, $size='gallery_thumbnail' );
@@ -47,8 +46,13 @@ function display_attribute_for_variations(){
 			       $full_line = '<span data-attribute="'.esc_attr($attribute).'" style="margin: 3px; background-image: url('.esc_attr($image_src[0]).')" class="alg-wc-civs-term varTrig image" data-value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $args['selected'] ), $term->slug, false ) . '>' . '</span>';
 			       array_push( $terms_array, $full_line );
 		        }
-		        echo implode( $terms_array, ' ' );
+				$output = array_slice($terms_array, 0, 4);
+		        echo implode( $output, ' ' );
+				echo '+';
+			echo sizeof($terms)-4 . " more";
 	        }
+			
     	}
     }
 }
+?>			
