@@ -24,7 +24,9 @@ a {
 }
 
 #main-header {
-	padding-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 1%;
+	margin-bottom: 1%;
 }
 
 .et_header_style_left .logo_container {
@@ -1096,9 +1098,6 @@ tbody tr td #learn-more {
     display: none!important;
 }
 
-nav#top-menu-nav {
-	float: right;
-}
 /* loading processing */
 .processing .blockOverlay {
 	background-color: #f3f2ef !important;
@@ -2998,17 +2997,11 @@ input[type=password] {
 }
 
 #et-top-navigation {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 20px;
-}
-
-#et-top-navigation {
 	float: none;
 }
 
 .wpmenucartli {
-	left: 17% !important;
+	left: 90% !important;
 }
 
 .nav li ul {
@@ -3026,7 +3019,7 @@ input[type=password] {
 }
 
 #et_top_search {
-	right: 17%;
+	right: 11%;
 	top: 28px;
 	position: absolute !important;
 }
@@ -3091,12 +3084,23 @@ body.admin-bar.et_fixed_nav #main-header {
 
 .aws-search-form {
 	max-width: 114px !important;
-	top: 55px;
-	left: 83%;
+	top: 49px;
+	left: 76%;
 }
 
 .et_close_search_field {
 	top: 29px !important;
-	right: 200px !important;
+	right: 114px !important;
+}
+
+#et-top-navigation {
+	display: flex;
+	justify-content: center;
+}
+
+.tinvwl-icon-heart {
+	position: absolute !important;
+	top: 66%;
+	left: 80%;
 }
 /* test */
