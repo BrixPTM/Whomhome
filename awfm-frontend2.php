@@ -195,7 +195,6 @@ class Woo_floating_minicart_frontend {
 			
 			
 			<?php if ( $empty_cart_status == false ):  ?>
-			<p class="cart-items"><?php echo sprintf(_n('%d product in the cart.', '%d products in the cart.', WC()->cart->cart_contents_count, 'woo-floating-minicart'), WC()->cart->cart_contents_count); ?></p>
 			
 			<ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
 			
@@ -205,12 +204,13 @@ class Woo_floating_minicart_frontend {
 						foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 							$_product     = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
 							$product_id   = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
+							
+							$cat = get_post_meta( $product_id, 'category', true );
 
 							if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_widget_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 
-								$product_name  = apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key );
-								$thumbnail     = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-								$product_price = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+								$product_name  = apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item);
+								$thumbnail     = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item);
 								
 								?>
 								
@@ -225,7 +225,9 @@ class Woo_floating_minicart_frontend {
 
 										<a href="<?php echo esc_url( $_product->get_permalink( $cart_item ) ); ?>" class="item-detail">
 											<?php echo $product_name . '&nbsp;'; ?>
-											<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); ?>
+											<br>
+											<?php echo $cat; ?>
+											<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity qtyCart"> Qty: ' . sprintf( '%s %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); ?>
 											<?php echo WC()->cart->get_item_data( $cart_item ); ?>
 											<?php
 											echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
@@ -255,8 +257,6 @@ class Woo_floating_minicart_frontend {
 			<?php if ( $empty_cart_status == false ): ?>
 
 				<div id="woo-floating-minicart-base">				
-				
-					<p class="total"><strong><?php _e( 'Subtotal', 'woo-floating-minicart' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
 					<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); 
 
@@ -270,8 +270,7 @@ class Woo_floating_minicart_frontend {
 					?>
 
 					<p class="buttons">
-						<a id="awfm-cart-button" href="<?php echo $cart_url; ?>" class="button wc-forward"><?php _e( 'Cart', 'woo-floating-minicart' ); ?></a>
-						<a id="awfm-checkout-button"  href="<?php echo $checkout_url; ?>" class="button checkout wc-forward"><?php _e( 'Checkout', 'woo-floating-minicart' ); ?></a>
+						<a id="awfm-checkout-button"  href="<?php echo $checkout_url; ?>" class="button checkout wc-forward"><?php _e( 'I\'M READY', 'woo-floating-minicart' ); ?></a>
 					</p>
 
 				</div> <!-- end woo-floating-minicart-base -->

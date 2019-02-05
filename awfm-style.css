@@ -24,15 +24,14 @@ width: auto;
 width:62px;
 }
 
-
 #woo-floating-minicart-wrapper{
 	position:relative;
 }
 #woo-floating-minicart-icon  span.cart-icon{
 	background-color: #42a2ce;
-    padding: 9px 12px;      
-    opacity: 0.9;    
-    cursor: pointer;
+  padding: 9px 12px;      
+  opacity: 0.9;    
+  cursor: pointer;
 	position:absolute;
 	top:0;
 }
@@ -44,7 +43,6 @@ width:62px;
 	-webkit-transition: all 1s;	
 	width:	216px;
 	margin-top:0;	
-
 }
 
 

@@ -74,6 +74,7 @@ a {
 	font-size: 18px;
 	float: right !important;
 	margin-right: 10px !important;
+	display: none;
 }
 
 .et_button_no_icon.woocommerce-page a.button {
@@ -331,7 +332,7 @@ button.button.woof_reset_search_form:hover {
 	color: #7d7d7d;
 	background:rgba(0,0,0,0);
 }
-input[type=radio],.woocommerce-ordering,.woocommerce-result-count,.woocommerce-breadcrumb,.woocommerce-products-header__title,.woof_radio_term_reset,.woof_radio_count,.woof_remove_ppi,.woof_term_19 {
+input[type=radio],.woocommerce-ordering,.woocommerce-result-count,.woocommerce-breadcrumb,.woof_radio_term_reset,.woof_radio_count,.woof_remove_ppi,.woof_term_19 {
  display:none !important;
 }
 ul.woof_list {
@@ -763,10 +764,6 @@ h1.product_title {
 	font-family: 'FontAwesome' !important;
 	content: '\f107 \00a0 \00a0';
 	color: #777; 
-}
-
-.related {
-	display: none !important;
 }
 
 .et_pb_contact_field_4.et_pb_contact_field .input {
@@ -3084,12 +3081,12 @@ body.admin-bar.et_fixed_nav #main-header {
 
 .aws-search-form {
 	max-width: 114px !important;
-	top: 49px;
+	top: 33px;
 	left: 76%;
 }
 
 .et_close_search_field {
-	top: 29px !important;
+	top: 5px !important;
 	right: 114px !important;
 }
 
@@ -3102,5 +3099,23 @@ body.admin-bar.et_fixed_nav #main-header {
 	position: absolute !important;
 	top: 66%;
 	left: 80%;
+}
+
+.attrGallery {
+	height: 16px;
+	width: 46px;
+	line-height: 22px;
+	margin-top: 10px !important;
+}
+
+.dashicons-admin-users {
+	left: 600% !important;
+}
+
+.related .attrGallery, .related .tinv-wishlist {
+	display: none;
+}
+.related .woocommerce-loop-product__title {
+	font-size: 15px !important;
 }
 /* test */
