@@ -51,7 +51,7 @@ a {
 }
 /* footer and bread crumb -- product pages -- included category grand children */
 #main-footer, .woocommerce .woocommerce-breadcrumb, .woocommerce-tabs, .wc-tabs-wrapper, .onsale,
-.reset_variations, .et_overlay, .term-49 .widgettitle, .term-131 .widgettitle, .term-134 .widgettitle, .term-135 .widgettitle, .term-136 .widgettitle, .term-51 .widgettitle, .term-50 .widgettitle, .term-52 .widgettitle, .term-54 .widgettitle, .term-55 .widgettitle, .term-65 .widgettitle, .term-65 .widgettitle, .term-58 .widgetttitle, .term-57 .widgettitle {
+.reset_variations, .et_overlay, .archive #sidebar {
 	display: none !important;
 }
 
@@ -1106,10 +1106,6 @@ tbody tr td #learn-more {
 	background-color: #33342a !important;
 	}
 
-.archive #page-container #et-main-area div #myBtn {
-	margin-left: 18%;
-}
-
 .ds-hide {
 	display: none !important;
 }
@@ -1628,6 +1624,10 @@ input[type=password] {
 }
 
 @media only screen and (max-width: 500px) {
+	nav#top-menu-nav {
+		float: right;
+	}
+	
 	.ds-hide {
 		display: block;
 	}
@@ -1819,11 +1819,6 @@ input[type=password] {
 	/* cart image */
 	.woocommerce-cart table.cart img {
 		width: 150px;
-	}
-	
-	/* go back button archive */
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 10% !important;
 	}
 	
 	/* archive products margin*/
@@ -2093,9 +2088,7 @@ input[type=password] {
 		padding-left: 10%;
 		width: 90%;
 	}
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 10% !important;
-	}
+
 	.woocommerce-cart table.cart img {
 		width: 100px;
 	}
@@ -2255,9 +2248,6 @@ input[type=password] {
 		padding-left: 12%;
 		width: 92%;
 	}
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 12% !important;
-	}
 
 	.collectionTD {
 		width: 38.7% !important;
@@ -2408,9 +2398,6 @@ input[type=password] {
 		padding-left: 12%;
 		width: 92%;
 	}
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 16% !important;
-	}
 
 	.collectionTD {
 		width: 38.7% !important;
@@ -2486,9 +2473,6 @@ input[type=password] {
 	#top-menu li.show-submenu ul.sub-menu {
 		padding-top: 30px;
 	}
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 18% !important;
-	}
 
 	.woocommerce-product-gallery__trigger {
 		bottom: 26%;
@@ -2537,10 +2521,6 @@ input[type=password] {
 	.woocommerce-cart table.cart img {
 		width: 100px;
 	}
-	/* go back button archive */
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 24.5% !important;
-	}
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1600px) {
@@ -2551,9 +2531,6 @@ input[type=password] {
 }
 
 @media only screen and (min-width: 1501px) and (max-width: 1799px) {
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 18.5% !important;
-	}
 	.wp-image-5139, .wp-image-3515, .wp-image-5138 {
 		width: 96%;
 		height: 96%;
@@ -2572,9 +2549,6 @@ input[type=password] {
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1799px) {
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 18.5% !important;
-	}
 	.aws-search-result {
     	top: 12% !important;
 		left: 62% !important;
@@ -2665,9 +2639,7 @@ input[type=password] {
 		margin-left: 18.5% !important;
 		width: 58% !important;
 	}
-	.archive #page-container #et-main-area div #myBtn {
-		margin-left: 29% !important;
-	}
+
 	.et_contact_bottom_container {
 		display: flex;
 		justify-content: flex-end;
@@ -3016,9 +2988,8 @@ input[type=password] {
 }
 
 #et_top_search {
-	right: 11%;
-	top: 28px;
-	position: absolute !important;
+	right: -13%;
+	top: 12px;
 }
 #menu-item-12128 .menu-image-title {
 	display: none;
@@ -3082,12 +3053,12 @@ body.admin-bar.et_fixed_nav #main-header {
 .aws-search-form {
 	max-width: 114px !important;
 	top: 33px;
-	left: 76%;
+	left: 69%;
 }
 
 .et_close_search_field {
 	top: 5px !important;
-	right: 114px !important;
+	right: 17% !important;
 }
 
 #et-top-navigation {
@@ -3115,7 +3086,10 @@ body.admin-bar.et_fixed_nav #main-header {
 .related .attrGallery, .related .tinv-wishlist {
 	display: none;
 }
+
 .related .woocommerce-loop-product__title {
 	font-size: 15px !important;
 }
+
+
 /* test */

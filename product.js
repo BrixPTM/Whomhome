@@ -27,3 +27,27 @@ jQuery(document).ready(function($) {
 document.querySelector('#wooddd').onclick = function() {
   jQuery('.pa_wood').attr('size', 3).toggle(20, "linear");
 }
+
+jQuery(document).ready(function($) {
+  $("label[for='pa_wood']")[0].id = "wooddd";
+  $(".specs_toggle_wrapper").click(function(e) {
+    $(".specs_wrap").slideToggle( "slow");
+	if ($(".specs_toggle_wrapper").text() == "+ MORE SPECS") {			
+      $(".specs_toggle_wrapper").html("- MORE SPECS")
+    } else  {		
+      $(".specs_toggle_wrapper").html("+ MORE SPECS")
+    }
+ });
+});
+
+jQuery(document).ready(function($) {
+  $("label[for='pa_fabric]")[0].id = "fabriccc";
+  $(".specs_toggle_wrapper").click(function(e) {
+    $(".specs_wrap").slideToggle( "slow");
+	if ($(".specs_toggle_wrapper").text() == "+ MORE SPECS") {			
+      $(".specs_toggle_wrapper").html("- MORE SPECS")
+    } else  {		
+      $(".specs_toggle_wrapper").html("+ MORE SPECS")
+    }
+ });
+});
