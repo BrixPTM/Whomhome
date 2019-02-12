@@ -4,7 +4,7 @@ body {
     width: 100%;
 }
 
-.hide {
+.hide,  .quantity {
 	display: none !important;
 }
 
@@ -50,8 +50,7 @@ a {
 	background-color: #f3f2ef;
 }
 /* footer and bread crumb -- product pages -- included category grand children */
-#main-footer, .woocommerce .woocommerce-breadcrumb, .woocommerce-tabs, .wc-tabs-wrapper, .onsale,
-.reset_variations, .et_overlay, .archive #sidebar {
+#main-footer, .woocommerce .woocommerce-breadcrumb, .woocommerce-tabs, .wc-tabs-wrapper, .onsale, .reset_variations, .et_overlay, .archive #sidebar {
 	display: none !important;
 }
 
@@ -127,13 +126,14 @@ tr {
 	font-family: 'Raleway';
 }
 /* before form -- choose */
-
+/*
 .variations::before {
 	font-family: 'Raleway';
 	content: 'MAKE IT YOUR OWN.';
 	font-size: 12px;
 	white-space: pre-wrap;
 }
+*/
 
 .onsale {
 	display: none;
@@ -202,8 +202,7 @@ tr {
 }
 
 .pa_fabric {
-	overflow-y: scroll;
-	height: 86px;
+	height: auto;
 	margin-right: -20px;
 }
 
@@ -2965,10 +2964,6 @@ input[type=password] {
 	position: inherit;
 }
 
-#et-top-navigation {
-	float: none;
-}
-
 .wpmenucartli {
 	left: 90% !important;
 }
@@ -3060,18 +3055,19 @@ body.admin-bar.et_fixed_nav #main-header {
 	top: 5px !important;
 	right: 17% !important;
 }
-
+/*
 #et-top-navigation {
 	display: flex;
 	justify-content: center;
 }
-
+*/
+/*
 .tinvwl-icon-heart {
 	position: absolute !important;
 	top: 66%;
 	left: 80%;
 }
-
+*/
 .attrGallery {
 	height: 16px;
 	width: 46px;
@@ -3090,6 +3086,3 @@ body.admin-bar.et_fixed_nav #main-header {
 .related .woocommerce-loop-product__title {
 	font-size: 15px !important;
 }
-
-
-/* test */
