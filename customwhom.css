@@ -204,6 +204,7 @@ tr {
 .pa_fabric {
 	height: auto;
 	margin-right: -20px;
+	width: 300px;
 }
 
 .pa_wood {
@@ -3055,12 +3056,14 @@ body.admin-bar.et_fixed_nav #main-header {
 	top: 5px !important;
 	right: 17% !important;
 }
-/*
+
 #et-top-navigation {
+	float: initial;
 	display: flex;
 	justify-content: center;
+	padding-left: 0 !important;
 }
-*/
+
 /*
 .tinvwl-icon-heart {
 	position: absolute !important;
@@ -3075,14 +3078,14 @@ body.admin-bar.et_fixed_nav #main-header {
 	margin-top: 10px !important;
 }
 
-.dashicons-admin-users {
-	left: 600% !important;
-}
-
 .related .attrGallery, .related .tinv-wishlist {
 	display: none;
 }
 
 .related .woocommerce-loop-product__title {
 	font-size: 15px !important;
+}
+
+#mega-menu-wrap-primary-menu {
+	background: rgba(255,255,255,0);
 }
